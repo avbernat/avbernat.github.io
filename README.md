@@ -1,0 +1,2 @@
+# avbernat.github.io
+Website coding from scratch is a creative, multi-dimensional process. Not only do you work in a series of coding languages, but you're also working at the interface between text, image, and site. You must also plan and execute how to guide users through your content with intentional motions. Here, I've laid out a website I made from scratch for the Cenzer Lab at the University of Chicago.
