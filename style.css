@@ -1,0 +1,344 @@
+/* Imported Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/* Features Across the Board */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Page Themes */
+body {
+    font-family: Verdana;
+}
+header {
+    display: flex;
+    /*justify-content: space-between; */
+    align-items: center;
+    font-family: Verdana;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+p {
+    margin: 2px 145px;
+}
+
+p span.special{
+    font-weight: bold;
+    font-family: Verdana; /* Trebuchet MS*/
+    font-size: 23px;
+    color: maroon;
+}
+
+.page_picture{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Home Page */
+
+.home_text {
+    font-family: Palatino;
+    line-height: 25.4px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: black;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.sponsors img{
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    padding: 0px 35px;
+}
+
+.center { /* centers the sponsors */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text Organization */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered, .title-centered, .top-right {
+	font-family: Verdana;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	background: rgba(76, 175, 80, 0);
+	color: white;
+}
+.centered, .title-centered {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 27px;
+}
+
+.title-centered {
+    font-size: 30px;
+}
+
+.top-right {
+  	top: 160px; 
+  	right: 96px;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+} 
+
+/* People Page */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+    display: flex;
+    justify-content: space between;
+    flex-wrap: wrap; /* added - this tells Flex to wrap onto a new line, if there is no space. */
+}
+
+.people_column {
+    float: left;
+    width: 33.33%;
+    padding: 65px;
+} 
+
+.column {
+    display: inline block;
+    padding: 0.5em;
+    display: block;
+    width: 33.333%;
+    box-sizing: border-box; /* added - this changes the way padding is applied, so it always stays at 33.33%, regardless of padding */
+}
+
+.column_research {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+button {
+    font-family: "Saira+Extra+Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    border: none;
+    background-color: maroon;
+    cursor: pointer;
+    padding: 9px 25px;
+    display: block;
+    margin: 0px 15px;
+}
+
+button:hover {
+    background-color: #333;
+    border: none;
+}  
+
+.jobname, .email {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.position{
+    font-family: Verdana;
+    color: grey;
+    font-size: 14px;
+}
+
+.email {
+    color: maroon;
+}
+
+.summary {
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.title {
+    font-family: monospace;
+    font-size: 25px;
+    color: maroon;
+}
+
+.join_text {
+    font-family: Palatino;
+    line-height: 25.4px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: black;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.wrapper, .button_wrapper, .wrap_img {
+    display: flex;
+    justify-content:center;  
+}
+
+/*.flight, .mate, .bag {
+    height: 300px;
+} */
+
+/* Publications */
+
+.post-container {
+    margin: 10px 10px 0 0;  
+    overflow: auto
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block;
+    width: 120px;
+    height: 100%;
+    margin: 10px 0px 10px 50px; 
+    padding: 0px 15px;
+}
+
+.post-content {
+    margin-left: 10px
+}
+
+.publications{
+    font-family: Verdana;
+    font-size: 14px;
+    margin: 15px 160px; /* top right bottom left */
+}
+.timeline {
+    margin: 4px 35px;
+    font-size: 26px;
+    
+}
+
+.description, .name {
+    font-family: Verdana;
+    font-size: 14px;
+    text-align: center;
+}
+
+.name {
+	color: maroon;
+	font-weight: bold;
+	line-height: 55.4px;
+}
+
+
+/* Window Adjustments */
+
+@media screen and (max-width: 1160px) {
+	.column {
+		padding: 40px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.centered {
+		font-size: 20px;
+	}
+	.title-centered {
+		font-size: 24px;
+	}
+	.home_text {
+		font-family: Palatino;
+		line-height: 25.4px;
+		font-size: 18px;
+		letter-spacing: 0.04em;
+		color: black;
+		text-align: center;
+		padding: 0px 0px;
+	}
+	.sponsors img{
+		width: 40%;
+		padding: 0px 0px;
+	}
+	p {
+		margin: 2px 45px;
+	}
+	.column {
+    	padding: 20px;
+	}
+	.column_research{
+		width: 50%;
+	}
+	.publications{
+    	margin: 15px 20px 0px 160px; /* top right bottom left */
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.people_column {
+		width: 50%;
+    	padding: 20px;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	button {
+		font-size: 14px;
+	}
+	.column {
+		width: 50%;
+    	padding: 20px;
+	}
+	.people_column {
+		width: 50%;
+    	padding: 20px;
+	}
+	.column_research{
+		width: 50%;
+	}
+}
+
+
+/* Bottom Rights */
+
+.bottom_rights {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.bottom_rights a {
+  font-family: sans-serif;
+  font-size: 15px;
+  float: left; 
+  color: lightgrey;
+  background-color: #333;
+  padding: 9px 15px;
+}
+
+ /*     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
+
+/*
+.home_pics{
+    margin: 0px 0px 0px 0px; /* (top, right, bottom, and left). 
+}*/
