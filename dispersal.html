@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>cenzerlab</title>
+        <!--<meta name="description" content=""> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+		<!-- top navigation menu -->
+        <div class="topnav">
+        <a href="contactus.html">Contact Us</a> 
+        </div> 
+		
+		<!-- main navigation menu content -->
+		<div class="nav" id="mainNav">
+			<a href="index.html" class="lab-logo">
+                 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
+			</a>
+			
+		  	<a href="index.html">Home</a>
+		  	<a href="research.html" class="nav_active">Research</a>
+			<a href="people.html">People</a>
+		  	<a href="publications.html">Publications</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="joinus.html">Join the Lab</a>
+			
+			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+			
+			<a href="https://ecologyandevolution.uchicago.edu/">
+				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
+			</a>
+			
+			<a href="https://ecologyandevolution.uchicago.edu/">
+				<img class="depart-logo" src="images/department_logo4.png" border="0">
+			</a>
+		
+
+		</div>
+		
+		<!-- main navigation script -->
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("mainNav");
+			  if (x.className === "nav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "nav";
+			  }
+			}
+		</script>
+		
+        <div class="container">
+            <img class="page_picture" src="images/research/dispersal_BW.jpeg" alt="logo">
+            <div class="title-centered">Dispersal</div>
+        </div>
+		<br>
+		<div class="row">
+          <div class="two_columns">
+            <img src="images/research/labeled_mill.png" style="width:100%">
+			<br>
+			<br>
+			  <div class="figure_text"><i>Flight mill</i>. We continue updating this machine using laser cutting and 3D printing techniques. 3D printers and laser cutters are available at the <a href="https://arts.uchicago.edu/explore/initiatives/media-arts-data-and-design-center-madd-center">MADD Center</a> at UChicago.</div>
+			<br>
+            <br>
+			   <p class="research_text">Given how intractable the dispersal of insects is in the field, we use a flight mill to address an important ecological phenomenon – how insects move. See this <a href="https://www.protocols.io/view/benefits-of-makerspaces-building-an-enhanced-fligh-bncfmatn.pdf">preprint</a> to read up more on our design and construction.</p>
+			 <br>
+			 <p class="research_text"> We also explore how landscape structure influences dispersal evolution using theoretical simulations.</p>
+          </div>
+		  <div class="two_columns">
+			 <p class="research_text"><i>Why do insects disperse?</i></p>
+			 <br>
+			 <p class="research_text"> Individual movement determines where and how ecological interactions happen, what evolutionary pressures populations experience, and the extent of gene flow possible between disparate populations. We study how genetic and plastic differences between individuals influence their flight capacity using field and lab experiments.</p>
+			<br>
+			<br>
+			<img src="images/research/avgspeed_map.png" class="map" style="width:100%">
+			<br>
+			<br>
+            <div class="figure_text"> <i>Average speed of soapberry bugs across latitude in Florida, US.</i> We also calculate additional flight statistics such as max speed, distance, duration, and periodicity. All results are automatedly collected and calculated through Python scripts. </div>
+		  </div>
+		</div>
+		<p class="explore_text">Explore more research topics &darr; </p>
+		<br>
+		<div style="align-items:center" class="button_wrapper">
+			<a href="dispersal.html"><button style="float:left" type="button" class="b_active">Dispersal</button></a>
+			<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
+			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
+			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+        </div>
+		<br>
+		<br>
+        <div class="bottom_rights">
+            <br>
+            <a>Cenzer Lab | University of Chicago</a> 
+            <br>
+            <br>
+            <a>copyright 2020</a>
+            <br>
+            <br>
+            <br>
+        </div> 
+    </body>
+</html>

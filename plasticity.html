@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>cenzerlab</title>
+        <!--<meta name="description" content=""> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+		<!-- top navigation menu -->
+        <div class="topnav">
+        <a href="contactus.html">Contact Us</a> 
+        </div> 
+		
+		<!-- main navigation menu content -->
+		<div class="nav" id="mainNav">
+			<a href="index.html" class="lab-logo">
+                 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
+			</a>
+			
+		  	<a href="index.html">Home</a>
+		  	<a href="research.html" class="nav_active">Research</a>
+			<a href="people.html">People</a>
+		  	<a href="publications.html">Publications</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="joinus.html">Join the Lab</a>
+			
+			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+			
+			<a href="https://ecologyandevolution.uchicago.edu/">
+				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
+			</a>
+			
+			<a href="https://ecologyandevolution.uchicago.edu/">
+				<img class="depart-logo" src="images/department_logo4.png" border="0">
+			</a>
+		
+
+		</div>
+		
+		<!-- main navigation script -->
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("mainNav");
+			  if (x.className === "nav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "nav";
+			  }
+			}
+		</script>
+		
+        <div class="container">
+            <img class="page_picture" src="images/research/plasticity.jpeg" alt="logo">
+            <div class="title-centered">Reproductive Plasticity</div>
+        </div>
+		<br>
+		<div class="row">
+          <div class="two_columns">
+			  <p class="research_text"><i>How do they choose mates?</i></p>
+			  <br>
+			   <p class="research_text">In sexually reproducing species, choosing a mate is one of the most crucial decisions determining an individual’s fitness. These decisions also determine when differentiation and gene flow between populations are possible. We study how developing in and adapting to novel environments influences mating behavior.</p>
+			  <br>
+			  <p class="research_text">[Explain how we do this]</p>
+			  <br>
+			  <br>
+			  <br>
+			  <img src="images/research/smallcups.jpeg" style="width:100%">
+			  <br>
+			  <br>
+			  <div class="bfigure_text"> <i>Small bug homes.</i> Each bug home houses an individual juvenile as they grow.</div>
+          </div>
+			<div class="two_columns">
+			  <img src="images/research/bigcups.jpeg" class="cup" style="width:80%">
+			  <br>
+			  <br>
+			  <div class="nfigure_text"> <i>Large bug homes.</i> During mate trials, three adults are housed in one large bug home.</div>
+          </div>
+		</div>
+		<p class="explore_text">Explore more research topics &darr; </p>
+		<br>
+		<div style="align-items:center" class="button_wrapper">
+			<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
+			<a href="plasticity.html"><button style="float:left"type="button" class="b_active">Plasticity</button></a>
+			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
+			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+        </div>
+		<br>
+		<br>
+        <div class="bottom_rights">
+            <br>
+            <a>Cenzer Lab | University of Chicago</a> 
+            <br>
+            <br>
+            <a>copyright 2020</a>
+            <br>
+            <br>
+            <br>
+        </div> 
+    </body>
+</html>
