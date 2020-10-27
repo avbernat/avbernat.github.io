@@ -476,8 +476,8 @@ p span.special{
 
 @media screen and (max-width: 490px) {
 	.rbutton, .b_active {
-		font-size: 15px;
-		padding: 9px 5px;
+		font-size: 13px;
+		padding: 9px 3px;
 	}
 }
 
