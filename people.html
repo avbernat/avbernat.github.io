@@ -58,7 +58,7 @@
             <div class="title-centered">Our Team</div>
         </div>
         <br>
-        
+		
         <div style="align-items:center" class="button_wrapper">
 			<a href="people.html"><button style="float:left" type="button" id="b1">Lab Members</button></a>
 			<a href="collaborators.html"><button style="float:left"type="button" id="b2" onclick="showImage();">Collaborators</button></a>
@@ -91,7 +91,7 @@
             <div class="jobname">Ana Silberg</div>
             <div class="position">Research Assistant</div>
             <a class="email" href="mailto: alsilberg@uchicago.edu">alsilberg@uchicago.edu</a>
-            <div class="summary">Focuses on . . . </div> 
+            <div class="summary"> </div> 
           </div>
         </div>
         
@@ -99,17 +99,47 @@
             <p class="title">News</p> 
         </div>
 		<p class="summary"> x/x/2020: Meredith Cenzer was appointed as ___ of the newly-formed Ecology and Evolution Diversity Committee.</p>
-        <p class="summary"> 03/01/2020: Meredith Cenzer published in <i>Ecology</i>, "Species‐specific, age‐varying plant traits affect herbivore growth and survival," and COVID was soon after declared a pandemic by WHO on March 11. Read more about how our lab operates during COVID here.</p>
+        <p class="summary"> 03/01/2020: Meredith Cenzer published in <i>Ecology</i>, "Species‐specific, age‐varying plant traits affect herbivore growth and survival," and COVID was soon after declared a pandemic by WHO on March 11. Read more about how our lab operates during COVID by clicking the tab below &darr;.</p>
+		<button type="button" class="collapsible">COVID-19 Lab Operations</button>
+			<div class="content">
+				<br>
+				<p><i>Last updated 10/27/2020</i></p>
+				<br>
+				<p><i>All lab members must take COVID-19 and lab safety training and have administrative approval within the Department of Ecology and Evolution before entering the lab. All lab personnel must take their temperature before entering the university buildings and ensure that they are not showing any ill symptoms. If symptoms are showing, then lab members must stay home.</i></p>
+				<br>
+				<p><i>When working in the lab, all lab personnel must follow CDC guidelines, including wearing a mask at all times and standing 6 feet apart from other lab personnel. In addition, lab memebers cannot face each other from the opposite-end of their lab benches. Futhermore, all surfaces touched must be disinfected after use at the end of a work-shift.</i></p>
+				<br>
+				<p><i>For more information, please visit the guidelines offered by the <a href="https://goforward.uchicago.edu/">University of Chicago </a> and the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>.</i></p>
+				<br>
+			</div>
         <p class="summary"> 09/03/2019: Anastasia Bernat, a UChicago alumn, joined the Cenzer Lab as a Research Technician.</p>
         <p class="summary"> 06/15/2019: Ana Silberg, an undergrad at the University of Chicago, joined the Cenzer Lab as a Research Assistant.</p>
         <p class="summary">04/18/2019: Meredith Cenzer joined the University of Chicago as a Pathways to Independence Instructor of Ecology and Evolution. </p>
     
         <br>
+		<!-- collapsible text script -->
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+		</script>
         <div style="align-items:center" class="wrapper">
             <a class="title">Statement on Diversity</a>
         </div>
         <p class="summary">Academia and our institutions were created as part of a society built on systemic racism, sexism, and classism; their structure and culture continue to perpetuate and exacerbate disparities in privilege. We acknowledge that gender, racial, and economic disparities in higher education continue to reflect broader societal patterns and cultural beliefs. As researchers and scholars, we hold the responsibility to practice anti-racism and be transparent in real or potential conflicts of interest from our community and colleagues. That is why we support the Black Lives Matter movement and stand in solidarity with immigrants and international members of our community.</p>
         <br>
+		
         <br>
         <br>
         <br>

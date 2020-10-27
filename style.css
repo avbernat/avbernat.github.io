@@ -200,6 +200,35 @@ p span.special{
 
 /* People Page */
 
+.collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 82%;
+  border: none;
+  text-align: left;
+  outline: none;
+  	font-size: 14px;
+	font-family: Verdana;
+	margin: 3px 0px 3px 145px;
+}
+
+.active, .collapsible:hover {
+  background-color: #777;
+}
+
+.content {
+  padding: 0 28px;
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+	font-family: Verdana;
+	color: #777;
+	font-size: 14px;
+	
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -349,6 +378,9 @@ button:hover {
 	.column {
 		padding: 40px;
 	}
+	.collapsible {
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 990px) {
@@ -389,6 +421,9 @@ button:hover {
 	.nfigure_text{
 		margin: 2px 15px 0px 80px;
 	}
+	.collapsible {
+		margin: 0px 0px 0px 45px;
+}
 }
 
 @media screen and (max-width: 900px) {
