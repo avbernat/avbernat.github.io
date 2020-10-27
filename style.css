@@ -16,7 +16,9 @@
     list-style: none;
     text-decoration: none;
 }
-
+a {
+	color: maroon;
+}
 
 /* Page Themes */
 body {
@@ -108,6 +110,94 @@ p span.special{
     font-size: 27px;
 } 
 
+/* Research Page */
+
+
+.zoomin img {
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      transition: all .2s ease;
+  }
+.zoomin img:hover{
+    opacity:0.75;
+}
+
+.two_columns {
+    float: left;
+    width: 50%;
+	padding: 30px;
+} 
+
+.research_text {
+    font-family: Veranda;
+    font-size: 18px;
+    margin: 2px 20px; /*2px 15px 0px 40px;*/
+}
+
+.figure_text{
+    font-family: Veranda;
+    color: grey;
+    font-size: 16px;
+	margin: 2px 15px 0px 40px;
+}
+.nfigure_text{
+    font-family: Veranda;
+    color: grey;
+    font-size: 16px;
+	margin: 2px 15px 0px 100px;
+}
+.bfigure_text{
+    font-family: Veranda;
+    color: grey;
+    font-size: 16px;
+}
+
+.map {
+	padding: 0px 20px;
+}
+
+.cup {
+	margin: 2px 15px 0px 100px;
+}
+
+
+.rbutton {
+    font-family: "Saira+Extra+Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    border: none;
+    padding: 9px 25px;
+    background-color: maroon;
+    cursor: pointer;
+    display: block;
+    margin: 0px 1px;
+	outline: none;
+}
+
+.b_active {
+	font-family: "Saira+Extra+Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    border: none;
+    padding: 9px 25px;
+    background-color: #333;
+    cursor: pointer;
+    display: block;
+    margin: 0px 1px;
+}
+
+.explore_text {
+	font-family: Verdana;
+    font-size: 14px;
+    text-align: center;
+    color: maroon;
+}
+
 /* People Page */
 
 .row::after {
@@ -154,6 +244,7 @@ button {
     padding: 9px 25px;
     display: block;
     margin: 0px 15px;
+	outline: none;
 }
 
 button:hover {
@@ -292,6 +383,12 @@ button:hover {
 	.publications{
     	margin: 15px 20px 0px 160px; /* top right bottom left */
 	}
+	.cup {
+		margin: 2px 15px 0px 80px;
+	}
+	.nfigure_text{
+		margin: 2px 15px 0px 80px;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -299,10 +396,18 @@ button:hover {
 		width: 50%;
     	padding: 20px;
 	}
+	.cup {
+		margin: 2px 15px 0px 60px;
+	}
+
 }
 
 
 @media screen and (max-width: 640px) {
+	.rbutton {
+		font-size: 15px;
+		padding: 9px 15px;
+	}
 	button {
 		font-size: 14px;
 	}
@@ -317,6 +422,22 @@ button:hover {
 	.column_research{
 		width: 50%;
 	}
+	.map {
+		padding: 0px 0px;
+	}
+	.two_columns {
+		padding: 10px;
+	} 
+	.figure_text{
+		margin: 0px 0px;
+	}
+	.cup {
+		margin: 2px 15px 0px 40px;
+	}
+	.nfigure_text{
+		margin: 2px 15px 0px 50px;
+	}
+
 }
 
 
