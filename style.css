@@ -439,7 +439,7 @@ button:hover {
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 490px) {
 	.rbutton, .b_active {
 		font-size: 15px;
 		padding: 9px 5px;
