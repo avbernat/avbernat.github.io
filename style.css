@@ -261,7 +261,7 @@ p span.special{
     padding: 15px;
 }
 
-button {
+.pbutton {
     font-family: "Saira+Extra+Condensed", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -276,7 +276,7 @@ button {
 	outline: none;
 }
 
-button:hover {
+.pbutton:hover {
     background-color: #333;
     border: none;
 }  
@@ -442,7 +442,7 @@ button:hover {
 		font-size: 15px;
 		padding: 9px 15px;
 	}
-	button {
+	.pbutton {
 		font-size: 14px;
 	}
 	.column {
