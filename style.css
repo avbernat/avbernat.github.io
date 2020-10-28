@@ -423,7 +423,8 @@ p span.special{
 	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
-}
+		width: 88%;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -471,13 +472,16 @@ p span.special{
 	.nfigure_text{
 		margin: 2px 15px 0px 50px;
 	}
-
+	.collapsible {
+		margin: 0px 0px 0px 45px;
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 490px) {
 	.rbutton, .b_active {
 		font-size: 13px;
-		padding: 9px 3px;
+		padding: 9px 4px;
 	}
 }
 
