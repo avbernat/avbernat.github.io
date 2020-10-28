@@ -476,6 +476,13 @@ p span.special{
 		margin: 0px 0px 0px 45px;
 		width: 80%;
 	}
+	.join_text {
+		padding: 0px 20px;
+	}
+	.home_text {
+    	padding: 0px 0px;
+	}
+
 }
 
 @media screen and (max-width: 490px) {
@@ -483,6 +490,16 @@ p span.special{
 		font-size: 13px;
 		padding: 9px 4px;
 	}
+	.email {
+		font-size: 13px;
+	}
+	.centered {
+		font-size: 18px;
+	}
+	.top-right {
+		transform: translate(-55%, -90%);
+		font-size: 25px;
+	} 
 }
 
 /* Bottom Rights */
