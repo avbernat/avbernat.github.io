@@ -178,6 +178,7 @@
 
 @media screen and (max-width: 640px) {
 	.BLMcontainer {
+		margin-left: 2em;
 		width: 85px;
 		height: 85px;
 	}
@@ -191,7 +192,7 @@
 }
 
 @media screen and (max-width: 490px) {
-		.BLMcontainer {
+	.BLMcontainer {
 		width: 55px;
 		height: 55px;
 	}
