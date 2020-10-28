@@ -477,7 +477,7 @@ p span.special{
 		width: 80%;
 	}
 	.join_text {
-		padding: 0px 20px;
+		padding: 0px 0px;
 	}
 	.home_text {
     	padding: 0px 0px;
@@ -491,13 +491,13 @@ p span.special{
 		padding: 9px 4px;
 	}
 	.email {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.centered {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	.top-right {
-		transform: translate(-55%, -90%);
+		transform: translate(-50%, -95%);
 		font-size: 25px;
 	} 
 }
