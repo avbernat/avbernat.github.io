@@ -12,7 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    
     list-style: none;
     text-decoration: none;
 }
@@ -23,6 +23,7 @@ a {
 /* Page Themes */
 body {
     font-family: Verdana;
+	background-color: whitesmoke;
 }
 header {
     display: flex;
@@ -51,6 +52,11 @@ p span.special{
 }
 
 /* Home Page */
+
+.home_images{
+	/* margin: -23px 0; */
+	position: relative;
+}
 
 .home_text {
     font-family: Palatino;
