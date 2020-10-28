@@ -203,6 +203,7 @@
 	.block {
           margin-bottom: -14.5px;
           right: -9.5px;
+		  /* display: none; */
      }
 	 h1 {
         font-size: 14px;
