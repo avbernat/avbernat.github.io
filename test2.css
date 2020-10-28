@@ -7,8 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-	/*transform: translate(0%, 50%); */
-	/*margin-top: -23em; */
 	margin-bottom: -16em;
 	margin-left: 3em;
 	position: absolute;
@@ -55,7 +53,6 @@
         align-items: baseline;
         position: relative;
 		  
-		 /* background-color:#232323; */
 		}
         .block {
           width:0px;
@@ -194,13 +191,17 @@
 }
 
 @media screen and (max-width: 490px) {
+		.BLMcontainer {
+		width: 55px;
+		height: 55px;
+	}
+	.block {
+          margin-bottom: -8px;
+          right: -9px;
+     }
+	 h1 {
+        font-size: 10px;
+	}
 
 }
-
-
-
-
-
-
-
 
