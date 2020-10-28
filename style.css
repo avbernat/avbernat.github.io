@@ -494,11 +494,11 @@ p span.special{
 		font-size: 12px;
 	}
 	.centered {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.top-right {
-		transform: translate(-50%, -95%);
-		font-size: 25px;
+		transform: translate(-60%, -90%);
+		font-size: 20px;
 	} 
 }
 
