@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"> <!-- english reading left to right -->
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>cenzerlab</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--<meta name="description" content=""> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- A typical mobile-optimized site contains  this line of code-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="author" href="https://github.com/avbernat">
 		<link rel="stylesheet" href="banner.css">
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="slideshow.css">
-		<link rel="stylesheet" href="navs_style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- has icons -->
+		<link rel="stylesheet" href="navs_style.css">			
     </head>
     <body>
-		
-		<!-- top navigation menu -->
+		<!-- Top navigation menu -->
         <div class="topnav">
 			<a href="contactus.html">Contact Us</a> 
         </div> 
 		
-		<!-- main navigation menu content -->
+		<!-- Main navigation menu content -->
 		<div class="nav" id="mainNav">
 			<a href="index.html" class="lab-logo">
                  <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
@@ -32,31 +30,15 @@
 			<a href="outreach.html">Gallery</a>
 			<a href="joinus.html">Join the Lab</a>
 			
-			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
-			
 			<a href="https://ecologyandevolution.uchicago.edu/">
 				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
 			</a>
-			
 			<a href="https://ecologyandevolution.uchicago.edu/">
 				<img class="depart-logo" src="images/department_logo4.png" border="0">
 			</a>
-		
-
 		</div>
 		
-		<!-- main navigation script -->
-		<script>
-			function myFunction() {
-			  var x = document.getElementById("mainNav");
-			  if (x.className === "nav") {
-				x.className += " responsive";
-			  } else {
-				x.className = "nav";
-			  }
-			}
-		</script>
-		
+		<!-- Banner -->
 		<div class="BLMcontainer">
 			<div class="box">
 				<div class="BLMtitle">
@@ -66,7 +48,6 @@
 			</div>
 		</div> 
 
-		
         <!-- Slideshow container -->
         <div class="slideshow-container">
 			
@@ -132,6 +113,7 @@
 			}
 		</script>
 		
+		<!-- Page content -->
 		<div style="align-items:center" class="wrapper"> 
 			<p class="home_text"><span class="special">We research </span> how populations respond, both genetically and via plasticity, to human-induced rapid environmental change. We use field- and lab-based experiments, long-term observational studies, and theory.</p>
 		</div>
@@ -151,7 +133,8 @@
 		</figure>
 		<br>
 		<br>
-
+		
+		<!-- Copyrights -->
 		<div class="bottom_rights">
 			<br>
 			<a>Cenzer Lab | University of Chicago</a> 
@@ -163,8 +146,4 @@
 			<br>
 		</div> 
     </body>
-
 </html>
-		<!--<ui:include src="nav.xhtml" /> -->
-        <!--<link href="nav.html" rel="import"> -->
-        <!-- <?php require("nav.html");b ?> -->
