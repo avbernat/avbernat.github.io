@@ -377,6 +377,13 @@ p span.special{
 	line-height: 55.4px;
 }
 
+/* Research Gallery */
+
+.research_text {
+	color: grey;
+	font-family: Verdana;
+}
+
 
 /* Window Adjustments */
 
