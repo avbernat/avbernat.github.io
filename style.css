@@ -384,6 +384,11 @@ p span.special{
 	font-family: Verdana;
 }
 
+.date {
+    margin: 4px 35px;
+    font-size: 18px;
+}
+
 
 /* Window Adjustments */
 
