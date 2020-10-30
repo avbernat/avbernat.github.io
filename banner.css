@@ -175,8 +175,7 @@
 	.block {
           margin-bottom: -25px;
           right: 7px;
-        }
-
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -201,9 +200,7 @@
 		height: 75px;
 	}
 	.block {
-          margin-bottom: -14.5px;
-          right: -9.5px;
-		  /* display: none; */
+		display: none;
      }
 	 h1 {
         font-size: 14px;
