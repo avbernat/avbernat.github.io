@@ -517,6 +517,9 @@ p span.special{
 		transform: translate(-60%, -165%);
 		font-size: 20px;
 	} 
+	.description, .name {
+		font-size: 13px;
+	}
 }
 
 /* Bottom Rights */
