@@ -1,23 +1,35 @@
-		<!-- top navigation menu -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+		<title>cenzerlab</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="author" href="https://github.com/avbernat">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+		<script src="mainNav.js"></script> <!-- main navigation script -->
+	</head>
+    <body>
+		<!-- Top navigation menu -->
         <div class="topnav">
-			<a href="contactus.html">Contact Us</a> 
+        <a href="contactus.html">Contact Us</a> 
         </div> 
 		
-		<!-- main navigation menu content -->
+		<!-- Main navigation menu content -->
 		<div class="nav" id="mainNav">
 			<a href="index.html" class="lab-logo">
                  <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
 			</a>
 			
-		  	<a href="index.html" class="nav_active">Home</a>
-		  	<a href="research.html">Research</a>
+		  	<a href="index.html">Home</a>
+		  	<a href="research.html" class="nav_active">Research</a>
 			<a href="people.html">People</a>
 		  	<a href="publications.html">Publications</a>
-			<a href="outreach.html">Gallery</a>
+			<a href="archives.html">Archives</a>
 			<a href="joinus.html">Join the Lab</a>
-			
+
 			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
-			<script src="mainNav.js"></script> <!-- main navigation script -->
 			
 			<a href="https://ecologyandevolution.uchicago.edu/">
 				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
@@ -26,3 +38,182 @@
 				<img class="depart-logo" src="images/department_logo4.png" border="0">
 			</a>
 		</div>
+		
+		<!-- Page content -->
+        <div class="container">
+            <img class="page_picture" src="images/research/research_house.jpeg" alt="logo">
+            <div class="title-centered">Research</div>
+        </div>
+
+		<!-- Styles -->
+		<style>
+			#chartdiv {
+			  width: 100%;
+			  height: 1150px;
+			  max-width:100%;
+			  margin: -300px 0px 0px 0px;
+			}
+		</style>
+		
+				<br>
+				<p class="research_p"><i>No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in itsrange in North America.</i></p>
+				<br>
+				<p class="research_p" style=color:black>Hover over the nodes to explore our questions and methods.</p>
+				<!-- Resources -->
+				<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+				<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+				<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+				<script src="https://cdn.amcharts.com/lib/4/themes/moonrisekingdom.js"></script>
+				<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+				<!-- Chart code -->
+				<script>
+				am4core.ready(function() {
+
+				// Themes begin
+				am4core.useTheme(am4themes_moonrisekingdom);
+				am4core.useTheme(am4themes_animated);
+				// Themes end
+
+				var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+				var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+
+				chart.data = [
+				  {
+					key: "Adaptation",
+					name: "How do organisms adapt to human-modified environments?",
+					description: "No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in its range in North America.",
+					children: [
+					  {
+						key: "Dispersal",
+						name: "Why do insects disperse?",
+						children: [
+						  {   key: "Mill",
+							  name: "Flight mill is used to explore the speed, distance, and periodicity of individual bugs.", value: 860 },
+						  {   key: "Theory",
+							  name: "Theoretical simulations are programmed to explore dispersal potential based on genetic and spatial metrics.", value: 2000 }
+						]
+					  },
+					  {
+						key: "Mates",
+						name: "How do they choose mates?",
+						children: [
+						  {	  key: "Trials", 
+							  name: "Mate trials are used to explore mating behavior.", value: 1408 }
+						]
+					  },
+					  {
+						key: "Nativity",
+						name: "What happens to the native community?",
+						children: [
+						  { 	key: "Host",
+							  name: "Map the persistence of host plants in competition with invasive plants.", value: 2208 }
+						]
+					  },
+						{
+						key: "Time",
+						name: "Can we see evolution on human timescales?",
+						children: [
+						  {   key: "Rec",
+							  name: "We map changes of host plant spatial distributions using herbarium records.", value: 935 },
+						  {   key: "Theory",
+							  name: "We use theoretical simulations to observe phenotypic and genetic changes on seasonal, annual, and decadal timescales.", value: 1935 }
+						]
+					  }
+
+					]
+				  }
+				];
+
+				networkSeries.dataFields.value = "value";
+				networkSeries.dataFields.key = "key";
+				networkSeries.dataFields.name = "name";
+				networkSeries.dataFields.description = "description";
+				networkSeries.dataFields.children = "children";
+				networkSeries.nodes.template.tooltipText = "{name}";
+				networkSeries.nodes.template.fillOpacity = 1;
+
+				networkSeries.nodes.template.label.text = "{key}"
+				networkSeries.fontSize = 13;
+
+				networkSeries.links.template.strokeWidth = 1;
+
+				var hoverState = networkSeries.links.template.states.create("hover");
+				hoverState.properties.strokeWidth = 3;
+				hoverState.properties.strokeOpacity = 1;
+
+				networkSeries.nodes.template.events.on("over", function(event) {
+				  event.target.dataItem.childLinks.each(function(link) {
+					link.isHover = true;
+				  })
+				  if (event.target.dataItem.parentLink) {
+					event.target.dataItem.parentLink.isHover = true;
+				  }
+
+				})
+
+				networkSeries.nodes.template.events.on("out", function(event) {
+				  event.target.dataItem.childLinks.each(function(link) {
+					link.isHover = false;
+				  })
+				  if (event.target.dataItem.parentLink) {
+					event.target.dataItem.parentLink.isHover = false;
+				  }
+				})
+
+				}); // end am4core.ready()
+				</script>
+
+				<!-- HTML -->
+				<div id="chartdiv"></div>
+	
+		<!-- collapsible text script -->
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+		</script>
+		<!--<div style="align-items:center" class="button_wrapper">
+			<a href="dispersal.html"><button style="float:left" type="button" class="b_active">Dispersal</button></a>
+			<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
+			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
+			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+        </div> -->
+		<p class="explore_text2">Explore more research topics &darr; </p>
+		<br>
+		<div style="align-items:center" class="button_wrapper">
+			<a href="dispersal.html"><button style="float:left" type="button" class="b_active">Dispersal</button></a>
+			<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
+			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
+			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+        </div>
+		<br>
+		<br>
+		<br>
+		<!-- Copyrights -->
+        <div class="bottom_rights2">
+            <br>
+            <a>Cenzer Lab | University of Chicago</a> 
+            <br>
+            <br>
+            <a>copyright 2020</a>
+            <br>
+            <br>
+            <br>
+        </div> 
+	
+	</body>
+</html>

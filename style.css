@@ -38,6 +38,11 @@ p {
     margin: 2px 145px;
 }
 
+.research_p {
+    margin: 2px 145px;
+	color: grey;
+}
+
 p span.special{
     font-weight: bold;
     font-family: Verdana; /* Trebuchet MS*/
@@ -126,7 +131,7 @@ p span.special{
       transition: all .2s ease;
   }
 .zoomin img:hover{
-    opacity:0.75;
+    opacity: 0.75;
 }
 
 .two_columns {
@@ -203,6 +208,15 @@ p span.special{
     text-align: center;
     color: maroon;
 }
+
+.explore_text2 {
+	font-family: Verdana;
+    font-size: 14px;
+    text-align: center;
+    color: maroon;
+	margin: -230px 0px 0px 0px;
+}
+
 
 /* People Page */
 
@@ -329,6 +343,15 @@ p span.special{
     justify-content:center;  
 }
 
+.button_wrapper2 {
+    display: flex;
+    justify-content: center;  
+	position: fixed;
+	margin: -194px 0px 0px 50px;
+}
+
+
+
 /*.flight, .mate, .bag {
     height: 300px;
 } */
@@ -377,6 +400,12 @@ p span.special{
 	line-height: 55.4px;
 }
 
+.writing {
+	color: grey;
+	font-family: Verdana;
+	margin: -450px 120px 0px 120px;
+}
+
 /* Research Gallery */
 
 .research_text {
@@ -398,6 +427,9 @@ p span.special{
 	}
 	.collapsible {
 		width: 75%;
+	}
+	.research_p {
+		margin: 2px 45px;
 	}
 }
 
@@ -528,7 +560,21 @@ p span.special{
   background-color: #333;
   overflow: hidden;
 }
+.bottom_rights2 {
+  background-color: #333;
+  overflow: hidden;
+}
 
+.bottom_rights2 a {
+  font-family: sans-serif;
+  font-size: 15px;
+  float: left; 
+  color: lightgrey;
+  background-color: #333;
+  padding: 10.5px 15px;
+  z-index: 1;
+  position: relative;
+}
 .bottom_rights a {
   font-family: sans-serif;
   font-size: 15px;
