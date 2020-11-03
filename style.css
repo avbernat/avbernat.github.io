@@ -574,6 +574,9 @@ p span.special{
 	.post-container {
     	margin: 10px 10px 0px -30px;  
 	}
+	.two_columns {
+		padding: 5px;
+	} 
 }
 
 /* Bottom Rights */
