@@ -155,6 +155,13 @@ p span.special{
 	padding: 30px;
 } 
 
+.research_text {
+    font-family: Veranda;
+    font-size: 18px;
+    margin: 2px 20px; /*2px 15px 0px 40px;*/
+	color: grey;
+}
+
 .research_texth {
     font-family: Veranda;
     font-size: 18px;
@@ -541,7 +548,7 @@ p span.special{
 	.home_text {
     	padding: 0px 0px;
 	}
-	.research_text {
+	.research_text, .research_texth {
 		font-size: 16px;
 	}
 	.figure_text, .nfigure_text, .bfigure_text{
