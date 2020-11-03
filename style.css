@@ -45,6 +45,13 @@ p {
 	color: grey;
 }
 
+.research_p {
+	font-family: Palatino;
+	font-size: 18px;
+    margin: 2px 145px;
+	color: grey;
+}
+
 p span.special{
     font-weight: bold;
     font-family: Verdana; /* Trebuchet MS*/
@@ -152,6 +159,7 @@ p span.special{
     font-family: Veranda;
     font-size: 18px;
     margin: 2px 20px; /*2px 15px 0px 40px;*/
+	color: grey;
 }
 
 .figure_text{
@@ -195,6 +203,10 @@ p span.special{
     margin: 0px 1px;
 	outline: none;
 }
+.rbutton:hover {
+    background-color: #333;
+    border: none;
+}  
 
 .b_active {
 	font-family: "Saira+Extra+Condensed", sans-serif;
@@ -410,12 +422,7 @@ p span.special{
 	margin: -450px 120px 0px 120px;
 }
 
-/* Research Gallery */
-
-.research_text {
-	color: grey;
-	font-family: Verdana;
-}
+/* Archives */
 
 .date {
     margin: 4px 35px;
@@ -489,7 +496,6 @@ p span.special{
 	.cup {
 		margin: 2px 15px 0px 60px;
 	}
-
 }
 
 @media screen and (max-width: 640px) {
@@ -536,6 +542,13 @@ p span.special{
 	.home_text {
     	padding: 0px 0px;
 	}
+	.research_text {
+		font-size: 16px;
+	}
+	.figure_text, .nfigure_text, .bfigure_text{
+    	font-size: 14px;
+	}
+
 }
 
 @media screen and (max-width: 490px) {
@@ -567,6 +580,8 @@ p span.special{
 .bottom_rights2 {
   background-color: #333;
   overflow: hidden;
+	margin: -10px 0px 0px 0px;
+	padding: 0px 0px 21px 0px;
 }
 
 .bottom_rights2 a {
