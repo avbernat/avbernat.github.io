@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="navs_style.css">
 		<script src="mainNav.js"></script> <!-- main navigation script -->
+		<!-- Resources -->
+		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/moonrisekingdom.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 	</head>
     <body>
 		<!-- Top navigation menu -->
@@ -44,42 +50,33 @@
             <img class="page_picture" src="images/research/research_house.jpeg" alt="logo">
             <div class="title-centered">Research</div>
         </div>
-
-		<!-- Styles -->
-		<style>
-			#chartdiv {
-			  width: 100%;
-			  height: 1150px;
-			  max-width:100%;
-			  margin: -300px 0px 0px 0px;
-			}
-		</style>
 		
-				<br>
-				<p class="research_p"><i>No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in itsrange in North America.</i></p>
-				<br>
-				<p class="research_p" style=color:black>Hover over the nodes to explore our questions and methods.</p>
-				<!-- Resources -->
-				<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-				<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-				<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
-				<script src="https://cdn.amcharts.com/lib/4/themes/moonrisekingdom.js"></script>
-				<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+		<br>
+					<!--<div style="align-items:center" class="button_wrapper3">
+					<a href="dispersal.html"><button style="float:left" type="button" class="b_active">Dispersal</button></a>
+					<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
+					<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+					<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
+					<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+					</div> -->
+		<p class="research_p" style="font-size: 19px;"><i>No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in its range in North America.</i></p>
+		<br>
+		<p class="research_p" style=color:black>Hover over the nodes to explore our questions and methods.</p>
 
-				<!-- Chart code -->
-				<script>
-				am4core.ready(function() {
+		<!-- Chart code -->
+		<script>
+			am4core.ready(function() {
 
-				// Themes begin
-				am4core.useTheme(am4themes_moonrisekingdom);
-				am4core.useTheme(am4themes_animated);
-				// Themes end
+			// Themes begin
+			am4core.useTheme(am4themes_moonrisekingdom);
+			am4core.useTheme(am4themes_animated);
+			// Themes end
 
-				var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
-				var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+			var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+			var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
 
-				chart.data = [
-				  {
+			chart.data = [
+				 {
 					key: "Adaptation",
 					name: "How do organisms adapt to human-modified environments?",
 					description: "No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in its range in North America.",
@@ -107,7 +104,7 @@
 						name: "What happens to the native community?",
 						children: [
 						  { 	key: "Host",
-							  name: "Map the persistence of host plants in competition with invasive plants.", value: 2208 }
+							  name: "We map the persistence of host plants in competition with invasive plants.", value: 2208 }
 						]
 					  },
 						{
@@ -162,35 +159,12 @@
 				})
 
 				}); // end am4core.ready()
-				</script>
+			</script>
 
-				<!-- HTML -->
-				<div id="chartdiv"></div>
+			<!-- HTML -->
+		
+			<div id="chartdiv"></div>
 	
-		<!-- collapsible text script -->
-		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-			  coll[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.nextElementSibling;
-				if (content.style.display === "block") {
-				  content.style.display = "none";
-				} else {
-				  content.style.display = "block";
-				}
-			  });
-			}
-		</script>
-		<!--<div style="align-items:center" class="button_wrapper">
-			<a href="dispersal.html"><button style="float:left" type="button" class="b_active">Dispersal</button></a>
-			<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
-			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
-			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton"> Nutrition</button></a>
-			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
-        </div> -->
 		<p class="explore_text2">Explore more research topics &darr; </p>
 		<br>
 		<div style="align-items:center" class="button_wrapper">

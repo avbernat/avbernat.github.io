@@ -39,6 +39,8 @@ p {
 }
 
 .research_p {
+	font-family: Palatino;
+	font-size: 18px;
     margin: 2px 145px;
 	color: grey;
 }
@@ -123,6 +125,12 @@ p span.special{
 
 /* Research Page */
 
+#chartdiv {
+	width: 100%;
+	height: 1150px;
+	max-width:100%;
+	margin: -300px 0px 0px 0px;
+			}
 
 .zoomin img {
       -webkit-transition: all .2s ease;
@@ -214,7 +222,7 @@ p span.special{
     font-size: 14px;
     text-align: center;
     color: maroon;
-	margin: -230px 0px 0px 0px;
+	margin: -240px 0px 0px 0px; 
 }
 
 
@@ -340,16 +348,12 @@ p span.special{
 
 .wrapper, .button_wrapper, .wrap_img {
     display: flex;
-    justify-content:center;  
+    justify-content:center; 
 }
 
-.button_wrapper2 {
-    display: flex;
-    justify-content: center;  
-	position: fixed;
-	margin: -194px 0px 0px 50px;
+.button_wrapper a{
+	z-index: 3;
 }
-
 
 
 /*.flight, .mate, .bag {
