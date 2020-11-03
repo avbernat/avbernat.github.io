@@ -155,10 +155,10 @@ p span.special{
 	padding: 30px;
 } 
 
-.research_text {
+.research_texth {
     font-family: Veranda;
     font-size: 18px;
-    margin: 2px 20px; /*2px 15px 0px 40px;*/
+    margin: 2px -35px 0px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
 }
 
