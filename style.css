@@ -375,7 +375,7 @@ p span.special{
 /* Publications */
 
 .post-container {
-    margin: 10px 10px 0 0;  
+    margin: 10px 10px 0px 0px;  
     overflow: auto
 }
 .post-thumb {
@@ -400,8 +400,7 @@ p span.special{
 }
 .timeline {
     margin: 4px 35px;
-    font-size: 26px;
-    
+    font-size: 26px; 
 }
 
 .description, .name {
@@ -568,6 +567,12 @@ p span.special{
 	} 
 	.description, .name {
 		font-size: 12px;
+	}
+	.timeline {
+		margin: 4px 10px;
+	}
+	.post-container {
+    	margin: 10px 10px 0px -30px;  
 	}
 }
 
