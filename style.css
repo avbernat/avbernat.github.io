@@ -251,6 +251,9 @@ p span.special{
 	width: 35px;
 	padding: 5px 5px 0px 0px;
 }
+.code:hover {
+	filter: invert(48%);
+}
 .collapsible {
   background-color: #333;
   color: white;
