@@ -1,35 +1,31 @@
-/* Imported Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300&display=swap');
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-
 /* Features Across the Board */
+:root {
+	--university-col: maroon;
+	--mainfont: Palatino;
+	--subfont: Verdana;
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
     list-style: none;
     text-decoration: none;
 }
-a {
-	color: maroon;
-}
+/* a {
+	color: var(--university-col);
+} */
 
 /* Page Themes */
 body {
-    font-family: Verdana;
+    font-family: var(--subfont);
 	background-color: whitesmoke;
 }
 header {
     display: flex;
     /*justify-content: space-between; */
     align-items: center;
-    font-family: Verdana;
+    font-family: var(--subfont);
     font-weight: 500;
     font-size: 15px;
 }
@@ -39,14 +35,7 @@ p {
 }
 
 .research_p {
-	font-family: Palatino;
-	font-size: 18px;
-    margin: 2px 145px;
-	color: grey;
-}
-
-.research_p {
-	font-family: Palatino;
+	font-family: var(--mainfont);
 	font-size: 18px;
     margin: 2px 145px;
 	color: grey;
@@ -54,9 +43,9 @@ p {
 
 p span.special{
     font-weight: bold;
-    font-family: Verdana; /* Trebuchet MS*/
+    font-family: var(--subfont); /* Trebuchet MS*/
     font-size: 23px;
-    color: maroon;
+    color: var(--university-col);
 }
 
 .page_picture{
@@ -73,7 +62,7 @@ p span.special{
 }
 
 .home_text {
-    font-family: Palatino;
+    font-family: var(--mainfont);
     line-height: 25.4px;
     font-size: 18px;
     letter-spacing: 0.04em;
@@ -104,7 +93,7 @@ p span.special{
 }
 
 .centered, .title-centered, .top-right {
-	font-family: Verdana;
+	font-family: var(--subfont);
 	position: absolute;
 	font-weight: bold;
 	text-align: center;
@@ -156,35 +145,35 @@ p span.special{
 } 
 
 .research_text {
-    font-family: Veranda;
-    font-size: 18px;
+    font-family: var(--subfont);
+    font-size: 15px;
     margin: 2px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
 }
 
 .research_texth {
-    font-family: Veranda;
-    font-size: 18px;
+    font-family: var(--subfont);
+    font-size: 15px;
     margin: 2px -35px 0px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
 }
 
 .figure_text{
-    font-family: Veranda;
+    font-family: var(--subfont);
     color: grey;
-    font-size: 16px;
+    font-size: 13px;
 	margin: 2px 15px 0px 40px;
 }
 .nfigure_text{
-    font-family: Veranda;
+    font-family: var(--subfont);
     color: grey;
-    font-size: 16px;
+    font-size: 13px;
 	margin: 2px 15px 0px 100px;
 }
 .bfigure_text{
-    font-family: Veranda;
+    font-family: var(--subfont);
     color: grey;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .map {
@@ -204,7 +193,7 @@ p span.special{
     text-decoration: none;
     border: none;
     padding: 9px 25px;
-    background-color: maroon;
+    background-color: var(--university-col);
     cursor: pointer;
     display: block;
     margin: 0px 1px;
@@ -230,17 +219,17 @@ p span.special{
 }
 
 .explore_text {
-	font-family: Verdana;
+	font-family: var(--subfont);
     font-size: 14px;
     text-align: center;
-    color: maroon;
+    color: var(--university-col);
 }
 
 .explore_text2 {
-	font-family: Verdana;
+	font-family: var(--subfont);
     font-size: 14px;
     text-align: center;
-    color: maroon;
+    color: var(--university-col);
 	margin: -250px 0px 0px 0px; 
 }
 
@@ -264,7 +253,7 @@ p span.special{
   text-align: left;
   outline: none;
   	font-size: 14px;
-	font-family: Verdana;
+	font-family: var(--subfont);
 	margin: 3px 0px 3px 145px;
 }
 
@@ -277,7 +266,7 @@ p span.special{
   display: none;
   overflow: hidden;
   background-color: whitesmoke;
-	font-family: Verdana;
+	font-family: var(--subfont);
 	color: #777;
 	font-size: 14px;
 	
@@ -316,13 +305,13 @@ p span.special{
 }
 
 .pbutton {
-    font-family: "Saira+Extra+Condensed", sans-serif;
+    font-family: var(--subfont);
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
     border: none;
-    background-color: maroon;
+    background-color: var(--university-col);
     cursor: pointer;
     padding: 9px 25px;
     display: block;
@@ -336,34 +325,34 @@ p span.special{
 }  
 
 .jobname, .email {
-    font-family: Verdana;
+    font-family: var(--subfont);
     font-weight: bold;
     font-size: 14px;
 }
 
 .position{
-    font-family: Verdana;
+    font-family: var(--subfont);
     color: grey;
     font-size: 14px;
 }
 
 .email {
-    color: maroon;
+    color: var(--university-col);
 }
 
 .summary {
-    font-family: Verdana;
+    font-family: var(--subfont);
     font-size: 14px;
 }
 
 .title {
     font-family: monospace;
     font-size: 25px;
-    color: maroon;
+    color: var(--university-col);
 }
 
 .join_text {
-    font-family: Palatino;
+    font-family: var(--mainfont);
     line-height: 25.4px;
     font-size: 18px;
     letter-spacing: 0.04em;
@@ -408,7 +397,7 @@ p span.special{
 }
 
 .publications{
-    font-family: Verdana;
+    font-family: var(--subfont);
     font-size: 14px;
     margin: 15px 160px; /* top right bottom left */
 }
@@ -418,20 +407,20 @@ p span.special{
 }
 
 .description, .name {
-    font-family: Verdana;
+    font-family: var(--subfont);
     font-size: 14px;
     text-align: center;
 }
 
 .name {
-	color: maroon;
+	color: var(--university-col);
 	font-weight: bold;
 	line-height: 55.4px;
 }
 
 .writing {
 	color: grey;
-	font-family: Verdana;
+	font-family: var(--subfont);
 	margin: -450px 120px 0px 120px;
 }
 
@@ -465,12 +454,6 @@ p span.special{
 		font-size: 24px;
 	}
 	.home_text {
-		font-family: Palatino;
-		line-height: 25.4px;
-		font-size: 18px;
-		letter-spacing: 0.04em;
-		color: black;
-		text-align: center;
 		padding: 0px 0px;
 	}
 	.sponsors img{
@@ -605,6 +588,7 @@ p span.special{
 	margin: -10px 0px 0px 0px;
 	padding: 0px 0px 21px 0px;
 }
+
 
 .bottom_rights2 a {
   font-family: sans-serif;
