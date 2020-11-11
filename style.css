@@ -125,7 +125,6 @@ p span.special{
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
-    text-decoration: none;
     border: none;
     padding: 9px 25px;
     background-color: var(--university-col);
@@ -157,7 +156,7 @@ p span.special{
 	padding: 30px;
 } 
 
-.research_text {
+.research_text, .research_texth, .research_textr {
     font-family: var(--subfont);
     font-size: var(--sub-fontsize);
     margin: 2px 20px; /*2px 15px 0px 40px;*/
@@ -165,10 +164,11 @@ p span.special{
 }
 
 .research_texth {
-    font-family: var(--subfont);
-    font-size: var(--sub-fontsize);
-    margin: 2px -35px 0px 20px; /*2px 15px 0px 40px;*/
-	color: grey;
+    margin: 2px -35px 0px 20px;
+}
+
+.research_textr {
+    margin: 2px 0px 0px -25px;
 }
 
 .figure_text{
@@ -499,6 +499,9 @@ p span.special{
 	.figure_text, .nfigure_text, .bfigure_text{
     	font-size: 14px;
 	}
+	.research_textr {
+		margin: 0px 0px 0px -5px;
+	}
 
 }
 
@@ -529,6 +532,9 @@ p span.special{
 	.two_columns {
 		padding: 5px;
 	} 
+	.research_textr {
+		margin: 0px 0px 0px 0px;
+	}
 }
 
 /* Bottom Rights */
