@@ -16,7 +16,6 @@
     text-decoration: none;
 }
 
-
 /* Page Themes */
 
 body {
@@ -133,9 +132,19 @@ p span.special{
     margin: 0px 1px;
 	outline: none;
 }
+
 .rbutton:hover, .b_active {
     background-color: #333;
 } 
+
+.wrapper, .button_wrapper, .wrap_img {
+    display: flex;
+    justify-content:center; 
+}
+
+.button_wrapper a{
+	z-index: 3;
+}
 
 .explore_text, .explore_text2 {
 	font-family: var(--subfont);
@@ -195,11 +204,29 @@ p span.special{
 
 /* People Page */
 
-.code {
+.row {
+    display: flex;
+    justify-content: space between;
+    flex-wrap: wrap; 
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.people_column {
+    float: left;
+    width: 33.33%;
+    padding: 65px;
+} 
+
+.code_img {
 	width: 35px;
 	padding: 5px 5px 0px 0px;
 }
-.code:hover {
+.code_img:hover {
 	filter: invert(48%);
 }
 .collapsible {
@@ -231,44 +258,11 @@ p span.special{
 	
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.row {
-    display: flex;
-    justify-content: space between;
-    flex-wrap: wrap; 
-}
-
-.people_column {
-    float: left;
-    width: 33.33%;
-    padding: 65px;
-} 
-
-.column {
-    display: inline block;
-    padding: 0.5em;
-    display: block;
-    width: 33.333%;
-    box-sizing: border-box; 
-}
-
-.column_research {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-}
-
 .pbutton {
     font-family: var(--subfont);
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
-    text-decoration: none;
     border: none;
     background-color: var(--university-col);
     cursor: pointer;
@@ -280,7 +274,6 @@ p span.special{
 
 .pbutton:hover {
     background-color: #333;
-    border: none;
 }  
 
 .jobname, .email {
@@ -310,23 +303,6 @@ p span.special{
     color: var(--university-col);
 }
 
-.join_text {
-    padding: 0px 30px;
-}
-
-.wrapper, .button_wrapper, .wrap_img {
-    display: flex;
-    justify-content:center; 
-}
-
-.button_wrapper a{
-	z-index: 3;
-}
-
-
-/*.flight, .mate, .bag {
-    height: 300px;
-} */
 
 /* Publications */
 
@@ -359,29 +335,19 @@ p span.special{
     font-size: 26px; 
 }
 
-.description, .name {
-    font-family: var(--subfont);
-    font-size: 14px;
-    text-align: center;
-}
-
-.name {
-	color: var(--university-col);
-	font-weight: bold;
-	line-height: 55.4px;
-}
-
-.writing {
-	color: grey;
-	font-family: var(--subfont);
-	margin: -450px 120px 0px 120px;
-}
 
 /* Archives */
 
 .date {
     margin: 4px 35px;
     font-size: var(--main-fontsize);
+}
+
+
+/* Join Us Page */
+
+.join_text {
+    padding: 0px 30px;
 }
 
 
@@ -419,9 +385,6 @@ p span.special{
 	.column {
     	padding: 20px;
 	}
-	.column_research{
-		width: 50%;
-	}
 	.publications{
     	margin: 15px 20px 0px 160px; /* top right bottom left */
 	}
@@ -429,7 +392,7 @@ p span.special{
 		margin: 2px 15px 0px 80px;
 	}
 	.nfigure_text{
-		margin: 2px 15px 0px 60px;
+		margin: 2px 15px 0px 80px;
 	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
@@ -462,9 +425,6 @@ p span.special{
 	.people_column {
 		width: 50%;
     	padding: 20px;
-	}
-	.column_research{
-		width: 50%;
 	}
 	.map {
 		padding: 0px 0px;
@@ -548,12 +508,3 @@ p span.special{
   background-color: #333;
   padding: 9px 15px;
 }
-
- /*     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
-
-/*
-.home_pics{
-    margin: 0px 0px 0px 0px; /* (top, right, bottom, and left). 
-}*/
-
-/* 	background: rgba(76, 175, 80, 0); */

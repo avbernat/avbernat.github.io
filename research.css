@@ -1,3 +1,4 @@
+/* Old Research */ 
 .zoomin img {
       -webkit-transition: all .2s ease;
       -moz-transition: all .2s ease;
@@ -7,3 +8,54 @@
 .zoomin img:hover{
     opacity: 0.75;
 }
+
+.column_research {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.description, .name {
+    font-family: var(--subfont);
+    font-size: 14px;
+    text-align: center;
+} 
+
+.name {
+	color: var(--university-col);
+	font-weight: bold;
+	line-height: 55.4px;
+} 
+
+@media screen and (max-width: 990px) {
+	.column_research {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.column_research {
+		width: 50%;
+	}
+}
+
+
+
+ /*     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
+
+/* 	background: rgba(76, 175, 80, 0); */
+
+/* 
+.writing {
+	color: grey;
+	font-family: var(--subfont);
+	margin: -450px 120px 0px 120px;
+}*/
+
+/* .column {
+    display: inline block;
+    padding: 0.5em;
+    display: block;
+    width: 33.333%;
+    box-sizing: border-box; 
+} */
