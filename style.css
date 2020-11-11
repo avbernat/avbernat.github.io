@@ -159,8 +159,8 @@ p span.special{
 .research_text, .research_texth, .research_textr {
     font-family: var(--subfont);
     font-size: var(--sub-fontsize);
-    margin: 2px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
+	margin: 2px 20px; /*2px 15px 0px 40px;*/
 }
 
 .research_texth {
@@ -429,7 +429,7 @@ p span.special{
 		margin: 2px 15px 0px 80px;
 	}
 	.nfigure_text{
-		margin: 2px 15px 0px 80px;
+		margin: 2px 15px 0px 60px;
 	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
@@ -476,10 +476,10 @@ p span.special{
 		margin: 0px 0px;
 	}
 	.cup {
-		margin: 2px 15px 0px 40px;
+		margin: 2px 15px 0px 30px;
 	}
 	.nfigure_text{
-		margin: 2px 15px 0px 50px;
+		margin: 2px 15px 0px 30px;
 	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
