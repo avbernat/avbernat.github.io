@@ -1,4 +1,5 @@
 /* Features Across the Board */
+
 :root {
 	--university-col: maroon;
 	--mainfont: Palatino;
@@ -14,33 +15,22 @@
     list-style: none;
     text-decoration: none;
 }
- a {
-	color: var(--university-col);
-} 
+
 
 /* Page Themes */
+
 body {
     font-family: var(--subfont);
 	background-color: whitesmoke;
 }
 
-p {
+p {  /* Make sure this makes sense */
     margin: 2px 145px;
-}
+} 
 
-.research_p {
-	font-family: var(--mainfont);
-	font-size: var(--main-fontsize);
-    margin: 2px 145px;
-	color: grey;
-}
-
-p span.special{
-    font-weight: bold;
-    font-family: var(--subfont); 
-    font-size: 23px;
-    color: var(--university-col);
-}
+a { /* links are generally maroon colored */
+	color: var(--university-col);
+} 
 
 .page_picture{
     max-width: 100%;
@@ -48,12 +38,39 @@ p span.special{
     position: relative;
 }
 
+
+/* Text Organization */
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered, .title-centered, .top-right {
+	font-family: var(--subfont);
+	position: absolute;
+	font-weight: bold;
+	color: white;
+}
+.centered, .title-centered {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 27px;
+}
+
 /* Home Page */
 
-.home_images{
-	/* margin: -23px 0; */
-	position: relative;
+.title-centered { /* slide show text */ 
+	font-size: 30px;
 }
+.top-right { /* slide show text */ 
+  	top: 160px; 
+  	right: 96px;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+} 
 
 .home_text, .join_text {
     font-family: var(--mainfont);
@@ -65,6 +82,13 @@ p span.special{
 }
 .home_text {
 	padding: 0px 20px;
+}
+
+p span.special{
+    font-weight: bold;
+    font-family: var(--subfont); 
+    font-size: 23px;
+    color: var(--university-col);
 }
 
 .sponsors img{
@@ -80,59 +104,52 @@ p span.special{
   margin-right: auto;
 }
 
-/* Text Organization */
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered, .title-centered, .top-right {
-	font-family: var(--subfont);
-	position: absolute;
-	font-weight: bold;
-	text-align: center;
-	background: rgba(76, 175, 80, 0);
-	color: white;
-}
-.centered, .title-centered {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 27px;
-}
-
-.title-centered {
-    font-size: 30px;
-}
-
-.top-right {
-  	top: 160px; 
-  	right: 96px;
-    transform: translate(-50%, -50%);
-    font-size: 27px;
-} 
 
 /* Research Page */
 
-#chartdiv {
+.research_p {
+	font-family: var(--mainfont);
+	font-size: var(--main-fontsize);
+	color: grey;
+}
+
+#chartdiv { /* force-directed diagram */
 	width: 100%;
 	height: 1150px;
 	max-width:100%;
 	margin: -300px 0px 0px 0px;
-			}
-
-.zoomin img {
-      -webkit-transition: all .2s ease;
-      -moz-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-      transition: all .2s ease;
-  }
-.zoomin img:hover{
-    opacity: 0.75;
 }
+
+.rbutton, .b_active {
+    font-family: "Saira+Extra+Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    border: none;
+    padding: 9px 25px;
+    background-color: var(--university-col);
+    cursor: pointer;
+    display: block;
+    margin: 0px 1px;
+	outline: none;
+}
+.rbutton:hover, .b_active {
+    background-color: #333;
+} 
+
+.explore_text, .explore_text2 {
+	font-family: var(--subfont);
+    font-size: var(--sub-fontsize);
+    text-align: center;
+    color: var(--university-col);
+}
+
+.explore_text2 {
+	margin: -250px 0px 0px 0px; 
+}
+
+/* Sub Research Pages */
 
 .two_columns {
     float: left;
@@ -180,54 +197,6 @@ p span.special{
 	margin: 2px 15px 0px 100px;
 }
 
-
-.rbutton {
-    font-family: "Saira+Extra+Condensed", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    border: none;
-    padding: 9px 25px;
-    background-color: var(--university-col);
-    cursor: pointer;
-    display: block;
-    margin: 0px 1px;
-	outline: none;
-}
-.rbutton:hover {
-    background-color: #333;
-    border: none;
-}  
-
-.b_active {
-	font-family: "Saira+Extra+Condensed", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    border: none;
-    padding: 9px 25px;
-    background-color: #333;
-    cursor: pointer;
-    display: block;
-    margin: 0px 1px;
-}
-
-.explore_text {
-	font-family: var(--subfont);
-    font-size: var(--sub-fontsize);
-    text-align: center;
-    color: var(--university-col);
-}
-
-.explore_text2 {
-	font-family: var(--subfont);
-    font-size: var(--sub-fontsize);
-    text-align: center;
-    color: var(--university-col);
-	margin: -250px 0px 0px 0px; 
-}
 
 /* People Page */
 
@@ -582,14 +551,11 @@ p span.special{
   padding: 9px 15px;
 }
 
-/*.bottom_rights2 a {
-  z-index: 1;
-  position: relative;
-} */
-
  /*     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
 
 /*
 .home_pics{
     margin: 0px 0px 0px 0px; /* (top, right, bottom, and left). 
 }*/
+
+/* 	background: rgba(76, 175, 80, 0); */

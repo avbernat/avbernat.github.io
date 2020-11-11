@@ -1,0 +1,9 @@
+.zoomin img {
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      transition: all .2s ease;
+  }
+.zoomin img:hover{
+    opacity: 0.75;
+}
