@@ -3,6 +3,8 @@
 	--university-col: maroon;
 	--mainfont: Palatino;
 	--subfont: Verdana;
+	--main-fontsize: 18px;
+	--sub-fontsize: 15px;
 }
 
 *{
@@ -21,14 +23,6 @@ body {
     font-family: var(--subfont);
 	background-color: whitesmoke;
 }
-header {
-    display: flex;
-    /*justify-content: space-between; */
-    align-items: center;
-    font-family: var(--subfont);
-    font-weight: 500;
-    font-size: 15px;
-}
 
 p {
     margin: 2px 145px;
@@ -36,14 +30,14 @@ p {
 
 .research_p {
 	font-family: var(--mainfont);
-	font-size: 18px;
+	font-size: var(--main-fontsize);
     margin: 2px 145px;
 	color: grey;
 }
 
 p span.special{
     font-weight: bold;
-    font-family: var(--subfont); /* Trebuchet MS*/
+    font-family: var(--subfont); 
     font-size: 23px;
     color: var(--university-col);
 }
@@ -61,14 +55,16 @@ p span.special{
 	position: relative;
 }
 
-.home_text {
+.home_text, .join_text {
     font-family: var(--mainfont);
     line-height: 25.4px;
-    font-size: 18px;
+    font-size: var(--main-fontsize);
     letter-spacing: 0.04em;
     color: black;
     text-align: center;
-    padding: 0px 20px;
+}
+.home_text {
+	padding: 0px 20px;
 }
 
 .sponsors img{
@@ -146,14 +142,14 @@ p span.special{
 
 .research_text {
     font-family: var(--subfont);
-    font-size: 15px;
+    font-size: var(--sub-fontsize);
     margin: 2px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
 }
 
 .research_texth {
     font-family: var(--subfont);
-    font-size: 15px;
+    font-size: var(--sub-fontsize);
     margin: 2px -35px 0px 20px; /*2px 15px 0px 40px;*/
 	color: grey;
 }
@@ -220,19 +216,18 @@ p span.special{
 
 .explore_text {
 	font-family: var(--subfont);
-    font-size: 14px;
+    font-size: var(--sub-fontsize);
     text-align: center;
     color: var(--university-col);
 }
 
 .explore_text2 {
 	font-family: var(--subfont);
-    font-size: 14px;
+    font-size: var(--sub-fontsize);
     text-align: center;
     color: var(--university-col);
 	margin: -250px 0px 0px 0px; 
 }
-
 
 /* People Page */
 
@@ -281,7 +276,7 @@ p span.special{
 .row {
     display: flex;
     justify-content: space between;
-    flex-wrap: wrap; /* added - this tells Flex to wrap onto a new line, if there is no space. */
+    flex-wrap: wrap; 
 }
 
 .people_column {
@@ -295,7 +290,7 @@ p span.special{
     padding: 0.5em;
     display: block;
     width: 33.333%;
-    box-sizing: border-box; /* added - this changes the way padding is applied, so it always stays at 33.33%, regardless of padding */
+    box-sizing: border-box; 
 }
 
 .column_research {
@@ -352,12 +347,6 @@ p span.special{
 }
 
 .join_text {
-    font-family: var(--mainfont);
-    line-height: 25.4px;
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    color: black;
-    text-align: center;
     padding: 0px 30px;
 }
 
@@ -398,8 +387,8 @@ p span.special{
 
 .publications{
     font-family: var(--subfont);
-    font-size: 14px;
-    margin: 15px 160px; /* top right bottom left */
+    font-size: var(--sub-fontsize);
+    margin: 15px 160px; 
 }
 .timeline {
     margin: 4px 35px;
@@ -428,7 +417,7 @@ p span.special{
 
 .date {
     margin: 4px 35px;
-    font-size: 18px;
+    font-size: var(--main-fontsize);
 }
 
 
@@ -532,11 +521,8 @@ p span.special{
 		margin: 0px 0px 0px 45px;
 		width: 80%;
 	}
-	.join_text {
+	.join_text, .home_text {
 		padding: 0px 0px;
-	}
-	.home_text {
-    	padding: 0px 0px;
 	}
 	.research_text, .research_texth {
 		font-size: 16px;
@@ -578,36 +564,28 @@ p span.special{
 
 /* Bottom Rights */
 
-.bottom_rights {
+.bottom_rights, .bottom_rights2 {
   background-color: #333;
   overflow: hidden;
 }
 .bottom_rights2 {
-  background-color: #333;
-  overflow: hidden;
 	margin: -10px 0px 0px 0px;
 	padding: 0px 0px 21px 0px;
 }
 
-
-.bottom_rights2 a {
+.bottom_rights a, .bottom_rights2 a {
   font-family: sans-serif;
-  font-size: 15px;
-  float: left; 
-  color: lightgrey;
-  background-color: #333;
-  padding: 10.5px 15px;
-  z-index: 1;
-  position: relative;
-}
-.bottom_rights a {
-  font-family: sans-serif;
-  font-size: 15px;
+  font-size: var(--sub-fontsize);
   float: left; 
   color: lightgrey;
   background-color: #333;
   padding: 9px 15px;
 }
+
+/*.bottom_rights2 a {
+  z-index: 1;
+  position: relative;
+} */
 
  /*     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
 
