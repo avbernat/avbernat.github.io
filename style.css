@@ -493,14 +493,14 @@ p span.special{
 	.join_text, .home_text {
 		padding: 0px 0px;
 	}
-	.research_text, .research_texth {
-		font-size: 16px;
+	.research_text, .research_texth, .research_textr {
+		font-size: 14px;
 	}
 	.figure_text, .nfigure_text, .bfigure_text{
-    	font-size: 14px;
+    	font-size: 12px;
 	}
 	.research_textr {
-		margin: 0px 0px 0px -5px;
+		margin: 0px 0px 0px 0px;
 	}
 
 }
@@ -532,9 +532,6 @@ p span.special{
 	.two_columns {
 		padding: 5px;
 	} 
-	.research_textr {
-		margin: 0px 0px 0px 0px;
-	}
 }
 
 /* Bottom Rights */
