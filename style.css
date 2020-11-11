@@ -171,22 +171,17 @@ p span.special{
     margin: 2px 0px 0px -25px;
 }
 
-.figure_text{
+.figure_text,.nfigure_text, .bfigure_text{
     font-family: var(--subfont);
     color: grey;
     font-size: 13px;
 	margin: 2px 15px 0px 40px;
 }
 .nfigure_text{
-    font-family: var(--subfont);
-    color: grey;
-    font-size: 13px;
 	margin: 2px 15px 0px 100px;
 }
 .bfigure_text{
-    font-family: var(--subfont);
-    color: grey;
-    font-size: 13px;
+	margin: 0px 0px 0px 15px;
 }
 
 .map {
