@@ -31,12 +31,15 @@ a { /* links are generally maroon colored */
 	color: var(--university-col);
 } 
 
+a:hover {
+	color: grey;
+}
+
 .page_picture{
     max-width: 100%;
     width: 100%;
     position: relative;
 }
-
 
 /* Text Organization */
 
@@ -109,7 +112,7 @@ p span.special{
 .research_p {
 	font-family: var(--mainfont);
 	font-size: var(--main-fontsize);
-	color: grey;
+	color: darkslategray;
 }
 
 #chartdiv { /* force-directed diagram */
@@ -340,18 +343,82 @@ p span.special{
 }
 
 
-/* Archives */
+/* Archives Page */
 
 .date {
     margin: 4px 35px;
     font-size: var(--main-fontsize);
 }
 
+hr {width: 95%;
+	margin-left: auto; 
+	margin-right: auto;
+	background-color: gainsboro;
+	height: 1px;
+	border: none;
+}
+
+/*.archive_text {
+    font-family: Verdana; 
+	letter-spacing: 1px;
+    font-size: var(--main-fontsize);
+	color: darkslategray;
+	margin: 4px 35px; 
+} */
+
+.archive_text {
+	color: #000;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	margin: 4px 20px; 
+}
+
+.columns {
+    float: left;
+    width: 50%;
+	padding: 0px;
+} 
+
+.code-container {
+    margin: 10px 0px 0px 0px;  
+    overflow: auto
+}
+.code-thumb {
+    float: left
+}
+.code-thumb img {
+    display: block;
+    width: 120px;
+    height: 100%;
+    margin: 10px 0px 10px 30px; 
+    padding: 0px 20px;
+}
+
+.code-content {
+    margin-left: 0px
+}
+
+.repo{
+    font-family: var(--subfont);
+    font-size: var(--sub-fontsize);
+    margin: 5px 3px; 
+}
 
 /* Join Us Page */
 
 .join_text {
     padding: 0px 30px;
+}
+
+.code_link { /* links are generally maroon colored */
+	color: black;
+} 
+
+.code_link:hover {
+	color: grey;
 }
 
 
@@ -435,6 +502,9 @@ p span.special{
 	}
 	.two_columns {
 		padding: 10px;
+	} 
+	.columns {
+		width: 100%;
 	} 
 	.figure_text{
 		margin: 0px 0px;
