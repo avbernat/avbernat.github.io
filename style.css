@@ -319,13 +319,12 @@ p span.special{
 }
 .post-thumb {
     float: left;
-		width: 10px;
-		height: 50px;
 }
+
 .post-thumb img {
     display: block;
     width: 120px;
-    height: 100%;
+    height: auto;
     margin: 10px 0px 10px 50px; 
     padding: 0px 15px;
 }
