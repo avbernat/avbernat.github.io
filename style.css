@@ -406,6 +406,7 @@ hr {width: 95%;
     font-family: var(--subfont);
     font-size: var(--sub-fontsize);
     margin: 5px 13px; 
+	color: grey;
 }
 
 /* Join Us Page */
@@ -419,7 +420,7 @@ hr {width: 95%;
 } 
 
 .code_link:hover {
-	color: grey;
+	color: maroon;
 }
 
 
@@ -572,11 +573,12 @@ hr {width: 95%;
 	padding: 0px 0px 21px 0px;
 }
 
-.bottom_rights a, .bottom_rights2 a {
+.rights-writing {
   font-family: sans-serif;
   font-size: var(--sub-fontsize);
   float: left; 
   color: lightgrey;
   background-color: #333;
   padding: 9px 15px;
+	margin: 0px 0px 0px 0px;
 }
