@@ -165,7 +165,7 @@ p span.special{
 	padding: 30px;
 } 
 
-.research_text, .research_texth, .research_textr {
+.research_text, .research_texth, .research_textr,.research_textl {
     font-family: var(--subfont);
     font-size: var(--sub-fontsize);
 	color: grey;
@@ -178,6 +178,10 @@ p span.special{
 
 .research_textr {
     margin: 2px 0px 0px -25px;
+}
+
+.research_textl {
+    margin: 2px 0px 0px 10px;
 }
 
 .figure_text,.nfigure_text, .bfigure_text{
@@ -386,7 +390,7 @@ p span.special{
     	padding: 20px;
 	}
 	.publications{
-    	margin: 15px 20px 0px 160px; /* top right bottom left */
+    	margin: 15px 20px 0px 160px; 
 	}
 	.cup {
 		margin: 2px 15px 0px 80px;
@@ -465,7 +469,7 @@ p span.special{
 		font-size: 13px;
 		padding: 9px 5px;
 	}
-	.email {
+	.email, .description, .name {
 		font-size: 12px;
 	}
 	.centered {
@@ -475,9 +479,6 @@ p span.special{
 		transform: translate(-60%, -165%);
 		font-size: 20px;
 	} 
-	.description, .name {
-		font-size: 12px;
-	}
 	.timeline {
 		margin: 4px 10px;
 	}
