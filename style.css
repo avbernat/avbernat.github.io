@@ -452,7 +452,7 @@ p span.special{
 	.join_text, .home_text {
 		padding: 0px 0px;
 	}
-	.research_text, .research_texth, .research_textr {
+	.research_text, .research_texth, .research_textr,  .research_textl {
 		font-size: 14px;
 	}
 	.figure_text, .nfigure_text, .bfigure_text{
