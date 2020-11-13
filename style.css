@@ -11,7 +11,7 @@
 	--main-fontsize: 18px;
 	--sub-fontsize: 15px;
 	--small-fontsize: 14px;
-	--lspacing: 0.04em;
+	--lspacing: 0.02em;
 }
 
 *{
@@ -253,7 +253,7 @@ p span.special{
   border: none;
   text-align: left;
   outline: none;
-  	font-size: 14px;
+  	font-size: var(--small-fontsize);
 	font-family: var(--subfont);
 	margin: 3px 0px 3px 145px;
 }
@@ -263,13 +263,12 @@ p span.special{
 }
 
 .content {
-  padding: 0 28px;
+  padding: 0px 28px;
   display: none;
   overflow: hidden;
-  background-color: whitesmoke;
 	font-family: var(--subfont);
 	color: #777;
-	font-size: 14px;
+	font-size: var(--small-fontsize);
 	
 }
 
@@ -294,13 +293,13 @@ p span.special{
 .jobname, .email {
     font-family: var(--subfont);
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--small-fontsize);
 }
 
 .position{
     font-family: var(--subfont);
     color: grey;
-    font-size: 14px;
+    font-size: var(--small-fontsize);
 }
 
 .email {
@@ -309,7 +308,7 @@ p span.special{
 
 .summary {
     font-family: var(--subfont);
-    font-size: 14px;
+    font-size: var(--small-fontsize);
 }
 
 .title {
@@ -344,7 +343,7 @@ p span.special{
 
 .publications{
     font-family: var(--subfont);
-    font-size: 14px;
+    font-size: var(--small-fontsize);
 	letter-spacing: var(--lspacing);
     margin: 15px 160px; 
 }
@@ -475,10 +474,7 @@ hr {width: 95%;
 	.publications{
     	margin: 15px 20px 0px 160px; 
 	}
-	.cup {
-		margin: 2px 15px 0px 80px;
-	}
-	.nfigure_text{
+	.cup, .nfigure_text{
 		margin: 2px 15px 0px 80px;
 	}
 	.collapsible {
@@ -503,7 +499,7 @@ hr {width: 95%;
 		padding: 9px 15px;
 	}
 	.pbutton {
-		font-size: 14px;
+		font-size: var(--small-fontsize);
 	}
 	.column {
 		width: 50%;
@@ -539,7 +535,7 @@ hr {width: 95%;
 		padding: 0px 0px;
 	}
 	.research_text, .research_texth, .research_textr,  .research_textl {
-		font-size: 14px;
+		font-size: var(--small-fontsize);
 	}
 	.figure_text, .nfigure_text, .bfigure_text{
     	font-size: 12px;
@@ -588,9 +584,10 @@ hr {width: 95%;
 }
 
 .rights-writing {
-  font-family: sans-serif;
+  font-family: var(--subfont3);
   font-size: var(--sub-fontsize);
   float: left; 
+	letter-spacing: var(--lspacing);
   color: lightgrey;
   background-color: #333;
   padding: 9px 15px;
