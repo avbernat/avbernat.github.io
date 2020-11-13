@@ -8,6 +8,7 @@
 					Geneva, AppleGothic, sans-serif;
 	--main-fontsize: 18px;
 	--sub-fontsize: 15px;
+	--small-fontsize: 14px;
 	--lspacing: 0.04em;
 }
 
@@ -340,8 +341,8 @@ p span.special{
 }
 
 .publications{
-    font-family: var(--subfont2);
-    font-size: var(--sub-fontsize);
+    font-family: var(--subfont);
+    font-size: 14px;
 	letter-spacing: var(--lspacing);
     margin: 15px 160px; 
 }
@@ -415,7 +416,7 @@ hr {width: 95%;
 }
 
 .repo{
-    font-family: var(--subfont2);
+    font-family: var(--subfont);
     font-size: var(--sub-fontsize);
 	letter-spacing: var(--lspacing);
 	color: grey;
