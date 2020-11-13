@@ -4,8 +4,11 @@
 	--university-col: maroon;
 	--mainfont: Palatino;
 	--subfont: Verdana;
+	--subfont2: "Century Gothic", CenturyGothic, 
+					Geneva, AppleGothic, sans-serif;
 	--main-fontsize: 18px;
 	--sub-fontsize: 15px;
+	--lspacing: 0.04em;
 }
 
 *{
@@ -50,10 +53,11 @@ a:hover {
 
 .centered, .title-centered, .top-right {
 	font-family: var(--subfont);
-	position: absolute;
 	font-weight: bold;
+	position: absolute;
 	color: white;
 }
+
 .centered, .title-centered {
 	top: 50%;
 	left: 50%;
@@ -78,7 +82,7 @@ a:hover {
     font-family: var(--mainfont);
     line-height: 25.4px;
     font-size: var(--main-fontsize);
-    letter-spacing: 0.04em;
+    letter-spacing: var(--lspacing);
     color: black;
     text-align: center;
 }
@@ -112,6 +116,7 @@ p span.special{
 .research_p {
 	font-family: var(--mainfont);
 	font-size: var(--main-fontsize);
+	letter-spacing: var(--lspacing);
 	color: darkslategray;
 }
 
@@ -305,8 +310,9 @@ p span.special{
 }
 
 .title {
-    font-family: monospace;
+    font-family: var(--subfont);
     font-size: 25px;
+	line-height: 40px;
     color: var(--university-col);
 }
 
@@ -334,11 +340,13 @@ p span.special{
 }
 
 .publications{
-    font-family: var(--subfont);
+    font-family: var(--subfont2);
     font-size: var(--sub-fontsize);
+	letter-spacing: var(--lspacing);
     margin: 15px 160px; 
 }
 .timeline {
+	font-family: var(--subfont2);
     margin: 4px 35px;
     font-size: 26px; 
 }
@@ -347,8 +355,11 @@ p span.special{
 /* Archives Page */
 
 .date {
+	font-family: var(--subfont2);
     margin: 4px 35px;
-    font-size: var(--main-fontsize);
+	letter-spacing: 0.7px;
+    font-size: var(--sub-fontsize);
+	font-weight: bold;
 }
 
 hr {width: 95%;
@@ -359,15 +370,7 @@ hr {width: 95%;
 	border: none;
 }
 
-/*.archive_text {
-    font-family: Verdana; 
-	letter-spacing: 1px;
-    font-size: var(--main-fontsize);
-	color: darkslategray;
-	margin: 4px 35px; 
-} */
-
-.archive_text {
+/* .archive_text {
 	color: #000;
 	font-family: 'proxima-nova', sans-serif;
 	font-size: 1.2rem;
@@ -375,7 +378,16 @@ hr {width: 95%;
 	line-height: 1.2;
 	letter-spacing: 1px;
 	margin: 4px 20px; 
-}
+} */
+
+.archive_text {
+    font-family:  Tahoma, Verdana, Segoe, sans-serif;
+	letter-spacing: 1.2px;
+    font-size: var(--main-fontsize);
+	color: black;
+	margin: 4px 20px; 
+} 
+
 
 .columns {
     float: left;
@@ -403,9 +415,9 @@ hr {width: 95%;
 }
 
 .repo{
-    font-family: var(--subfont);
+    font-family: var(--subfont2);
     font-size: var(--sub-fontsize);
-    margin: 5px 13px; 
+	letter-spacing: var(--lspacing);
 	color: grey;
 }
 
@@ -415,7 +427,7 @@ hr {width: 95%;
     padding: 0px 30px;
 }
 
-.code_link { /* links are generally maroon colored */
+.code_link {
 	color: black;
 } 
 
@@ -582,3 +594,13 @@ hr {width: 95%;
   padding: 9px 15px;
 	margin: 0px 0px 0px 0px;
 }
+
+
+.store {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 1px;
+}
+
