@@ -12,75 +12,79 @@
 		<link rel="stylesheet" href="navs_style.css">
 		<link rel="icon" href="images/icon.png">
 		<link rel="apple-touch-icon" href="images/icon.png">
-		<script src="mainNav.js"></script> <!-- main navigation script -->
     </head>
     <body>
+		<header>
 		<!-- Top navigation menu -->
-        <div class="topnav">
-        <a href="contactus.html">Contact Us</a> 
-        </div> 
+			<script src="mainNav.js"></script> 
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
+
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="test.html" class="nav_active">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html">Publications</a>
+				<a href="archives.html">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/department_logo4.png" border="0">
+				</a>
+			</div>
+		</header>
 		
-		<!-- Main navigation menu content -->
-		<div class="nav" id="mainNav">
-			<a href="index.html" class="lab-logo">
-                 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
-			</a>
-			
-		  	<a href="index.html">Home</a>
-		  	<a href="test.html" class="nav_active">Research</a>
-			<a href="people.html">People</a>
-		  	<a href="publications.html">Publications</a>
-			<a href="archives.html">Archives</a>
-			<a href="joinus.html">Join the Lab</a>
-			
-			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
-			
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
-			</a>
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="depart-logo" src="images/department_logo4.png" border="0">
-			</a>
-		</div>
-		
+		<main>
 		<!-- Page content -->
-        <div class="container">
-            <img class="page_picture" src="images/research/plasticity.jpeg" alt="logo">
-            <div class="title-centered">Reproductive Plasticity</div>
-        </div>
-		<br>
-		<div class="row">
-          <div class="two_columns">
-			  <p class="research_texth"><i>How do they choose mates?</i></p>
-			  <br>
-			   <p class="research_texth">In sexually reproducing species, choosing a mate is one of the most crucial decisions determining an individual’s fitness. These decisions also determine when differentiation and gene flow between populations are possible. We study how insect species developing in and adapting to novel environments influences mating behavior.</p>
-			  <br>
-			  <p class="research_texth">We do this by conducting mate trials. We raise the juveniles of field-collected bugs and then house two males (each from a different host plant) and one female in a large bug home. During mate trials, we count male-female mounting events throughout each day and for most of their adult life. </p>
-			  <br>
-			  <br>
-			  <img src="images/research/smallcups.jpeg" style="width:100%; margin: 0px 0px 0px 15px;">
-			  <br>
-			  <br>
-			  <div class="bfigure_text"> <i>Small bug homes.</i> Each bug home houses an individual juvenile as they grow.</div>
-          </div>
-			<div class="two_columns">
-			  <img src="images/research/bigcups.jpeg" class="cup" style="width:80%">
-			  <br>
-			  <br>
-			  <div class="nfigure_text"> <i>Large bug homes.</i> During mate trials, three adults are housed in one large bug home.</div>
-          </div>
-		</div>
-		<p class="explore_text">Explore more research topics &darr; </p>
-		<br>
-		<div style="align-items:center" class="button_wrapper">
-			<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
-			<a href="plasticity.html"><button style="float:left"type="button" class="b_active">Plasticity</button></a>
-			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
-			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton">Evo Time</button></a>
-			<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
-        </div>
-		<br>
-		<br>
+			<div class="container">
+				<img class="page_picture" src="images/research/plasticity.jpeg" alt="logo">
+				<div class="title-centered">Reproductive Plasticity</div>
+			</div>
+			<br>
+			<div class="row">
+			  <div class="two_columns">
+				  <p class="research_texth"><i>How do they choose mates?</i></p>
+				  <br>
+				   <p class="research_texth">In sexually reproducing species, choosing a mate is one of the most crucial decisions determining an individual’s fitness. These decisions also determine when differentiation and gene flow between populations are possible. We study how insect species developing in and adapting to novel environments influences mating behavior.</p>
+				  <br>
+				  <p class="research_texth">We do this by conducting mate trials. We raise the juveniles of field-collected bugs and then house two males (each from a different host plant) and one female in a large bug home. During mate trials, we count male-female mounting events throughout each day and for most of their adult life. </p>
+				  <br>
+				  <br>
+				  <img src="images/research/smallcups.jpeg" style="width:100%; margin: 0px 0px 0px 15px;">
+				  <br>
+				  <br>
+				  <div class="bfigure_text"> <i>Small bug homes.</i> Each bug home houses an individual juvenile as they grow.</div>
+			  </div>
+				<div class="two_columns">
+				  <img src="images/research/bigcups.jpeg" class="cup" style="width:80%">
+				  <br>
+				  <br>
+				  <div class="nfigure_text"> <i>Large bug homes.</i> During mate trials, three adults are housed in one large bug home.</div>
+			  </div>
+			</div>
+			<p class="explore_text">Explore more research topics &darr; </p>
+			<br>
+			<div style="align-items:center" class="button_wrapper">
+				<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
+				<a href="plasticity.html"><button style="float:left"type="button" class="b_active">Plasticity</button></a>
+				<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+				<a href="nutrition.html"><button style="float:left" type="button"class="rbutton">Evo Time</button></a>
+				<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+			</div>
+			<br>
+			<br>
+		</main>
 		
 		<!-- Copyrights -->
         <div class="bottom_rights">

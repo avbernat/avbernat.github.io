@@ -12,76 +12,80 @@
 		<link rel="stylesheet" href="navs_style.css">
 		<link rel="icon" href="images/icon.png">
 		<link rel="apple-touch-icon" href="images/icon.png">
-		<script src="mainNav.js"></script> <!-- main navigation script -->
     </head>
     <body>
+		<header>
 		<!-- Top navigation menu -->
-        <div class="topnav">
-        <a href="contactus.html">Contact Us</a> 
-        </div> 
+			<script src="mainNav.js"></script>
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
+
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="test.html" class="nav_active">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html">Publications</a>
+				<a href="archives.html">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/department_logo4.png" border="0">
+				</a>
+			</div>
+		</header>
 		
-		<!-- Main navigation menu content -->
-		<div class="nav" id="mainNav">
-			<a href="index.html" class="lab-logo">
-                 <img class="lab_logo" src="images/lab_logo5.png" alt="logo">
-			</a>
-			
-		  	<a href="index.html">Home</a>
-		  	<a href="test.html" class="nav_active">Research</a>
-			<a href="people.html">People</a>
-		  	<a href="publications.html">Publications</a>
-			<a href="archives.html">Archives</a>
-			<a href="joinus.html">Join the Lab</a>
-			
-			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
-			
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0">
-			</a>
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="depart-logo" src="images/department_logo4.png" border="0">
-			</a>
-		</div>
-		
+		<main>
 		<!-- Page content -->
-        <div class="container">
-            <img class="page_picture" src="images/research/morphology.jpeg" alt="logo">
-            <div class="title-centered">Morphology</div>
-        </div>
-		<br>
-		<div class="row">
-          <div class="two_columns">
-			  <p class="research_texth"><i>What is their physical form?</i></p>
-			  <br>
-			   <p class="research_texth"> The soapberry bug has a particular evolutionary history. As a plant-feeding specialist, it rapidly adapted to feed on the introduced genus of plants in its range in North America. In the 1980s, populations of the red-shouldered soapberry bug (<i>Jadera haematoloma</i>) locally adapted to feed on the seeds of a native host plant, Halloon vine, and an introduced host plant, golden rain tree. By 2014, local differentiation in beak length had been lost, likely as a consequence of increased gene flow.</p>
-			  <br>
-			  <p class="research_texth"> We use microscopic photography to measure the evolving physical form of soapberry bugs. We take body length, wing length, thorax length, beak length, and wing-area measurements. In addition, we conduct dissections under the microscope for wing-muscle digestion.</p>
-			  <br>
-			  <br>
-			  <img src="images/research/wing.bmp" style="width:100%; margin: 0px 0px 0px 15px;">
-			  <br>
-			  <br>
-			  <div class="bfigure_text"> <i>Single wing.</i> We use ImageJ to process individual wings and extract wing area or wing curvature measurements.</div>
-          </div>
-			<div class="two_columns">
-			  <img src="images/research/dorsal-26-male.jpg" class="cup" style="width:80%">
-			  <br>
-				<img src="images/research/dorsal-67-female.jpg" class="cup" style="width:80%">
-			  <br>
-			  <div class="nfigure_text"> <i>Dorsal images of a male (top) and female (bottom) soapberry bug.</i> There is a long-wing morph, which is the top figure, and a short-wing morph, which is the bottom figure.</div>
-          </div>
-		</div>
-		<p class="explore_text">Explore more research topics &darr; </p>
-		<br>
-		<div style="align-items:center" class="button_wrapper">
-			<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
-			<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
-			<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
-			<a href="nutrition.html"><button style="float:left" type="button"class="rbutton">Evo Time</button></a>
-			<a href="morphology.html"><button style="float:left" type="button" class="b_active">Morphology</button></a>
-        </div>
-		<br>
-		<br>
+			<div class="container">
+				<img class="page_picture" src="images/research/morphology.jpeg" alt="logo">
+				<div class="title-centered">Morphology</div>
+			</div>
+			<br>
+			<div class="row">
+			  <div class="two_columns">
+				  <p class="research_texth"><i>What is their physical form?</i></p>
+				  <br>
+				   <p class="research_texth"> The soapberry bug has a particular evolutionary history. As a plant-feeding specialist, it rapidly adapted to feed on the introduced genus of plants in its range in North America. In the 1980s, populations of the red-shouldered soapberry bug (<i>Jadera haematoloma</i>) locally adapted to feed on the seeds of a native host plant, Halloon vine, and an introduced host plant, golden rain tree. By 2014, local differentiation in beak length had been lost, likely as a consequence of increased gene flow.</p>
+				  <br>
+				  <p class="research_texth"> We use microscopic photography to measure the evolving physical form of soapberry bugs. We take body length, wing length, thorax length, beak length, and wing-area measurements. In addition, we conduct dissections under the microscope for wing-muscle digestion.</p>
+				  <br>
+				  <br>
+				  <img src="images/research/wing.bmp" style="width:100%; margin: 0px 0px 0px 15px;">
+				  <br>
+				  <br>
+				  <div class="bfigure_text"> <i>Single wing.</i> We use ImageJ to process individual wings and extract wing area or wing curvature measurements.</div>
+			  </div>
+				<div class="two_columns">
+				  <img src="images/research/dorsal-26-male.jpg" class="cup" style="width:80%">
+				  <br>
+					<img src="images/research/dorsal-67-female.jpg" class="cup" style="width:80%">
+				  <br>
+				  <div class="nfigure_text"> <i>Dorsal images of a male (top) and female (bottom) soapberry bug.</i> There is a long-wing morph, which is the top figure, and a short-wing morph, which is the bottom figure.</div>
+			  </div>
+			</div>
+			<p class="explore_text">Explore more research topics &darr; </p>
+			<br>
+			<div style="align-items:center" class="button_wrapper">
+				<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
+				<a href="plasticity.html"><button style="float:left"type="button" class="rbutton">Plasticity</button></a>
+				<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+				<a href="nutrition.html"><button style="float:left" type="button"class="rbutton">Evo Time</button></a>
+				<a href="morphology.html"><button style="float:left" type="button" class="b_active">Morphology</button></a>
+			</div>
+			<br>
+			<br>
+		</main>
 		
 		<!-- Copyrights -->
         <div class="bottom_rights">

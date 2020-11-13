@@ -13,120 +13,124 @@
 		<link rel="stylesheet" href="images.css">
 		<link rel="icon" href="images/icon.png">
 		<link rel="apple-touch-icon" href="images/icon.png">
-		<script src="mainNav.js"></script> <!-- main navigation script -->
     </head>
     <body>
+		<header>
 		<!-- Top navigation menu -->
-        <div class="topnav">
-        <a href="contactus.html">Contact Us</a> 
-        </div> 
-		
-		<!-- Main navigation menu content -->
-		<div class="nav" id="mainNav">
-			<a href="index.html" class="lab-logo">
-                 <img class="lab_logo" src="images/lab_logo5.png" alt="lab logo">
-			</a>
-			
-		  	<a href="index.html">Home</a>
-		  	<a href="test.html">Research</a>
-			<a href="people.html">People</a>
-		  	<a href="publications.html" class="nav_active">Publications</a>
-			<a href="archives.html">Archives</a>
-			<a href="joinus.html">Join the Lab</a>
-			
-			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
-			
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="sdepart-logo" src="images/short_depart_logo.png" border="0" alt="department logo">
-			</a>
-			<a href="https://ecologyandevolution.uchicago.edu/">
-				<img class="depart-logo" src="images/department_logo4.png" border="0" alt="department logo">
-			</a>
-		</div>
+			<script src="mainNav.js"></script> 
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
 
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/lab_logo5.png" alt="lab logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="test.html">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html" class="nav_active">Publications</a>
+				<a href="archives.html">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/short_depart_logo.png" border="0" alt="department logo">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/department_logo4.png" border="0" alt="department logo">
+				</a>
+			</div>
+		</header>
+		
+		<main> 
 		<!-- Page content -->
-        <div class="container">
-            <img class="page_picture" src="images/publications/graphs.jpeg" alt="Page picture representing our graphs."> 
-            <div class="title-centered" style="color: black;">Publications</div>
-        </div>
-        
-		<!--<script>
-		var testData = [
-  			{label: "person a", times: [
-				{"starting_time": 1355752800000, "ending_time": 1355759900000},
-				{"starting_time": 1355767900000, "ending_time": 1355774400000}]},
-  			{label: "person b", times: [
-				{"starting_time": 1355759910000, "ending_time": 1355761900000}]},
-  			{label: "person c", times: [
-    			{"starting_time": 1355761910000, "ending_time": 1355763910000}]}
- 			];
-			
-			var chart = d3.timeline();
+			<div class="container">
+				<img class="page_picture" src="images/publications/graphs.jpeg" alt="Page picture representing our graphs."> 
+				<div class="title-centered" style="color: black;">Publications</div>
+			</div>
 
-			var svg = d3.select("#timeline1").append("svg").attr("width", 500).datum(testData).call(chart);
-			
-		</script> -->
-		
-        <p class="timeline">2020</p>
-		<div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/3Dprints.jpeg" alt="Enhanced flight mill paper"/></div>
-                <div class="post-content">
-                <p class="publications">Bernat, AV. Benefits of makerspaces: Building an enchanced flight mill for the study of tethered insect flight. <i>protocols.io</i>.<a href="https://www.protocols.io/view/benefits-of-makerspaces-building-an-enhanced-fligh-bncfmatn.pdf"> Preprint</a>.</p></div>	
-        </div>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/ecology.fig.jpeg" alt="Plant traits paper"/></div>
-                <div class="post-content">
-                <p class="publications">Yang, LH, Cenzer, ML, Morgan, L, and Hall, G. Species-specific, age-varying plant traits affect herbivore growth and survival. <i>Ecology</i> 101 (7). <a href="https://www.biorxiv.org/content/10.1101/2020.01.14.906859v1">Preprint</a> and <a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3029">published paper</a>.</p>
-            </div>
-        </div>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/ecology.2020.jpeg" alt="Milkweed-monarch interactions paper"/></div>
-                <div class="post-content">
-                <p class="publications">Yang, LH and ML Cenzer  (2020) Seasonal windows of opportunity in milkweed-monarch interactions. <i>Ecology</i> 101 (1): e02880. <a href="https://meredithcenzer.files.wordpress.com/2020/01/yang-cenzer-2020-ecology.pdf">pdf</a>.</p>
-            </div>
-        </div>
-		
-        <p class="timeline">2019</p>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/evolution.2019.jpeg" alt="Adaption in diverse landscapes paper"/></div>
-                <div class="post-content">
-                <p class="publications">Cenzer, ML and LK M’Gonigle (2019) Local adaptation in dispersal in multi-resource landscapes. <i>Evolution</i> 73 (4): 648-660. <a href="https://meredithcenzer.files.wordpress.com/2019/04/cenzer-mgonigle-2019-evolution.pdf">pdf</a>,  <a href="https://github.com/mlcenzer/Code-for-dispersal-evolution-and-LA">code</a>. </p>
-            </div>
-        </div>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/adult_fact_fig.jpeg" alt="Facilitation to competition paper"/></div>
-                <div class="post-content">
-                <p class="publications">Cenzer, ML (preprint) Adult facilitation becomes competition as juvenile soapberry bugs age. <i>bioRxiv.</i> <a href="https://doi.org/10.1101/186536<">Preprint</a>.</p>
-            </div>
-        </div>
-		
-        <p class="timeline">2018</p>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/nature_communications.2018.jpeg" alt="Manipulation of insulin paper" /></div>
-                <div class="post-content">
-                <p class="publications">Fawcett, MM, MC Parks, AE Tibbetts, JS Swart, EM Richards, JC Vanegas, ML Cenzer, L Crowley,  WR Simmons, WS Hou, and DR Angelini (2018) Manipulation of insulin signaling phenocopies evolution of a host-associated polyphenism. <i>Nature Communications</i> 9, Article number: 1699. <a href="	https://meredithcenzer.files.wordpress.com/2018/08/fawcett-et-al-2018.pdf">pdf</a>.</p>
-            </div>
-        </div>
-          
-        <p class="timeline">2017</p>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/american_nat.2017.jpeg" alt="Maladaptive plasticity paper" /></div>
-                <div class="post-content">
-                <p class="publications">*Cenzer, ML (2017) Maladaptive plasticity masks the effects of natural selection in the red-shouldered soapberry bug. <i>The American Naturalist</i>, 190: 521-533. <a href="https://meredithcenzer.files.wordpress.com/2016/10/cenzer-2017-amnat.pdf">pdf</a>.</p> 
-        
-                <p class="publications">*Winner of the 2017 Student Paper of the Year award from <i>The American Naturalist</i>.</p>
+			<!--<script>
+			var testData = [
+				{label: "person a", times: [
+					{"starting_time": 1355752800000, "ending_time": 1355759900000},
+					{"starting_time": 1355767900000, "ending_time": 1355774400000}]},
+				{label: "person b", times: [
+					{"starting_time": 1355759910000, "ending_time": 1355761900000}]},
+				{label: "person c", times: [
+					{"starting_time": 1355761910000, "ending_time": 1355763910000}]}
+				];
 
-            </div>
-        </div>
-    
-        <p class="timeline">2016</p>
-        <div class="post-container" id="fade-in">                
-            <div class="post-thumb"><img src="images/publications/evolution.2016.jpeg" alt="Invasive host paper"/></div>
-                <div class="post-content">
-                <p class="publications">Cenzer, ML (2016) Adaptation to an invasive host is driving the loss of a native ecotype. <i>Evolution</i> 70 (10): 2296-2307. <a href="https://meredithcenzer.files.wordpress.com/2016/10/cenzer-2016-evolution.pdf">pdf</a></p> 
-            </div>
-        </div>
-        <br>
+				var chart = d3.timeline();
+
+				var svg = d3.select("#timeline1").append("svg").attr("width", 500).datum(testData).call(chart);
+
+			</script> -->
+
+			<p class="timeline">2020</p>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/3Dprints.jpeg" alt="Enhanced flight mill paper"/></div>
+					<div class="post-content">
+					<p class="publications">Bernat, AV. Benefits of makerspaces: Building an enchanced flight mill for the study of tethered insect flight. <i>protocols.io</i>.<a href="https://www.protocols.io/view/benefits-of-makerspaces-building-an-enhanced-fligh-bncfmatn.pdf"> Preprint</a>.</p></div>	
+			</div>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/ecology.fig.jpeg" alt="Plant traits paper"/></div>
+					<div class="post-content">
+					<p class="publications">Yang, LH, Cenzer, ML, Morgan, L, and Hall, G. Species-specific, age-varying plant traits affect herbivore growth and survival. <i>Ecology</i> 101 (7). <a href="https://www.biorxiv.org/content/10.1101/2020.01.14.906859v1">Preprint</a> and <a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3029">published paper</a>.</p>
+				</div>
+			</div>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/ecology.2020.jpeg" alt="Milkweed-monarch interactions paper"/></div>
+					<div class="post-content">
+					<p class="publications">Yang, LH and ML Cenzer  (2020) Seasonal windows of opportunity in milkweed-monarch interactions. <i>Ecology</i> 101 (1): e02880. <a href="https://meredithcenzer.files.wordpress.com/2020/01/yang-cenzer-2020-ecology.pdf">pdf</a>.</p>
+				</div>
+			</div>
+
+			<p class="timeline">2019</p>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/evolution.2019.jpeg" alt="Adaption in diverse landscapes paper"/></div>
+					<div class="post-content">
+					<p class="publications">Cenzer, ML and LK M’Gonigle (2019) Local adaptation in dispersal in multi-resource landscapes. <i>Evolution</i> 73 (4): 648-660. <a href="https://meredithcenzer.files.wordpress.com/2019/04/cenzer-mgonigle-2019-evolution.pdf">pdf</a>,  <a href="https://github.com/mlcenzer/Code-for-dispersal-evolution-and-LA">code</a>. </p>
+				</div>
+			</div>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/adult_fact_fig.jpeg" alt="Facilitation to competition paper"/></div>
+					<div class="post-content">
+					<p class="publications">Cenzer, ML (preprint) Adult facilitation becomes competition as juvenile soapberry bugs age. <i>bioRxiv.</i> <a href="https://doi.org/10.1101/186536<">Preprint</a>.</p>
+				</div>
+			</div>
+
+			<p class="timeline">2018</p>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/nature_communications.2018.jpeg" alt="Manipulation of insulin paper" /></div>
+					<div class="post-content">
+					<p class="publications">Fawcett, MM, MC Parks, AE Tibbetts, JS Swart, EM Richards, JC Vanegas, ML Cenzer, L Crowley,  WR Simmons, WS Hou, and DR Angelini (2018) Manipulation of insulin signaling phenocopies evolution of a host-associated polyphenism. <i>Nature Communications</i> 9, Article number: 1699. <a href="	https://meredithcenzer.files.wordpress.com/2018/08/fawcett-et-al-2018.pdf">pdf</a>.</p>
+				</div>
+			</div>
+
+			<p class="timeline">2017</p>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/american_nat.2017.jpeg" alt="Maladaptive plasticity paper" /></div>
+					<div class="post-content">
+					<p class="publications">*Cenzer, ML (2017) Maladaptive plasticity masks the effects of natural selection in the red-shouldered soapberry bug. <i>The American Naturalist</i>, 190: 521-533. <a href="https://meredithcenzer.files.wordpress.com/2016/10/cenzer-2017-amnat.pdf">pdf</a>.</p> 
+
+					<p class="publications">*Winner of the 2017 Student Paper of the Year award from <i>The American Naturalist</i>.</p>
+
+				</div>
+			</div>
+
+			<p class="timeline">2016</p>
+			<div class="post-container" id="fade-in">                
+				<div class="post-thumb"><img src="images/publications/evolution.2016.jpeg" alt="Invasive host paper"/></div>
+					<div class="post-content">
+					<p class="publications">Cenzer, ML (2016) Adaptation to an invasive host is driving the loss of a native ecotype. <i>Evolution</i> 70 (10): 2296-2307. <a href="https://meredithcenzer.files.wordpress.com/2016/10/cenzer-2016-evolution.pdf">pdf</a></p> 
+				</div>
+			</div>
+			<br>
+		</main>
 		
 		<!-- Copyrights -->
         <div class="bottom_rights">
