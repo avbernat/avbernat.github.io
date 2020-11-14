@@ -25,12 +25,13 @@
 /* Page Themes */
 
 body {
-    font-family: var(--subfont);
 	background-color: whitesmoke;
 }
 
 p {  /* Make sure this makes sense */
-    margin: 2px 145px;
+	font-family: var(--subfont3);
+	letter-spacing: var(--lspacing);
+	font-size: var(--small-fontsize);
 } 
 
 a { /* links are generally maroon colored */
@@ -82,15 +83,13 @@ a:hover {
 } 
 
 .home_text, .join_text {
+	margin: 2px 145px;
     font-family: var(--mainfont);
     line-height: 25.4px;
     font-size: var(--main-fontsize);
     letter-spacing: var(--lspacing);
     color: black;
     text-align: center;
-}
-.home_text {
-	padding: 0px 20px;
 }
 
 p span.special{
@@ -119,15 +118,17 @@ p span.special{
 .research_p {
 	font-family: var(--mainfont);
 	font-size: var(--main-fontsize);
-	letter-spacing: var(--lspacing);
+	letter-spacing: 0.04em;
 	color: darkslategray;
+	margin: 2px 145px;
 }
 
 #chartdiv { /* force-directed diagram */
 	width: 100%;
 	height: 1150px;
-	max-width:100%;
+	max-width: 100%;
 	margin: -300px 0px 0px 0px;
+	font-family: var(--subfont);
 }
 
 .rbutton, .b_active {
@@ -177,9 +178,10 @@ p span.special{
 } 
 
 .research_text, .research_texth, .research_textr,.research_textl {
-    font-family: var(--subfont);
+    font-family: var(--subfont3);
+	letter-spacing: var(--lspacing);
     font-size: var(--sub-fontsize);
-	color: grey;
+	color: dimgrey;
 	margin: 2px 20px; /*2px 15px 0px 40px;*/
 }
 
@@ -196,7 +198,8 @@ p span.special{
 }
 
 .figure_text,.nfigure_text, .bfigure_text{
-    font-family: var(--subfont);
+    font-family: var(--subfont3);
+	letter-spacing: var(--lspacing);
     color: grey;
     font-size: 13px;
 	margin: 2px 15px 0px 40px;
@@ -307,6 +310,12 @@ p span.special{
 }
 
 .summary {
+    font-family: var(--subfont);
+    font-size: var(--small-fontsize);
+	margin: 2px 145px;
+}
+
+.summary2 {
     font-family: var(--subfont);
     font-size: var(--small-fontsize);
 }
@@ -458,8 +467,8 @@ hr {width: 95%;
 	.title-centered {
 		font-size: 24px;
 	}
-	.home_text {
-		padding: 0px 0px;
+	.home_text, .join_text {
+		margin: 2px 85px;
 	}
 	.sponsors img{
 		width: 40%;
@@ -480,6 +489,9 @@ hr {width: 95%;
 	.collapsible {
 		margin: 0px 0px 0px 45px;
 		width: 88%;
+	}
+	.summary {
+		margin: 2px 45px;
 	}
 }
 
@@ -543,6 +555,9 @@ hr {width: 95%;
 	.research_textr {
 		margin: 0px 0px 0px 0px;
 	}
+	.home_text, .join_text {
+		margin: 2px 45px;
+	}
 
 }
 
@@ -579,18 +594,15 @@ hr {width: 95%;
   overflow: hidden;
 }
 .bottom_rights2 {
-	margin: -10px 0px 0px 0px;
+	margin: -2px 0px 0px 0px;
 	padding: 0px 0px 21px 0px;
 }
 
 .rights-writing {
-  font-family: var(--subfont3);
-  font-size: var(--sub-fontsize);
-  float: left; 
-	letter-spacing: var(--lspacing);
-  color: lightgrey;
-  background-color: #333;
-  padding: 9px 15px;
+	font-size: var(--sub-fontsize);
+	float: left; 
+	color: lightgrey;
+	padding: 9px 15px;
 	margin: 0px 0px 0px 0px;
 }
 
