@@ -127,6 +127,7 @@ p span.special{
 	max-width: 100%;
 	margin: -300px 0px 0px 0px;
 	font-family: var(--subfont);
+	text-align: center;
 }
 
 .rbutton, .b_active {

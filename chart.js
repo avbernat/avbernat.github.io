@@ -11,17 +11,16 @@ am4core.ready(function() {
 	chart.data = [
 			{
 			key: "Adaptation",
-			name: "How do organisms adapt to human-modified environments?",
-			description: "No part of the world has been untouched by human activity. In our lab, we aim to understand how adaptation allows insects to use novel environments; how that adaptation influences plasticity; and how dispersal and gene flow influence populations and communities in the native environment. We focus on these questions in the red-shouldered soapberry bug, a plant-feeding insect specialist that has rapidly adapted to feed on an introduced genus of plants in its range in North America.",
+			name: "How do organisms adapt to \n human-modified environments?",
 			children: [
 				{
 				key: "Dispersal",
 				name: "Why do insects disperse?",
 				children: [
 					{   key: "Mill",
-						name: "Flight mill is used to explore the speed, distance, and periodicity of individual bugs.", value: 860 },
+						name: "Flight mill is used to explore the speed, \n distance, and periodicity of individual bugs.", value: 860 },
 					{   key: "Theory",
-						name: "Theoretical simulations are programmed to explore dispersal potential based on genetic and spatial metrics.", value: 2000 }
+						name: "Theoretical simulations are programmed to explore \n dispersal potential based on genetic and spatial metrics.", value: 2000 }
 						]
 				},
 				{
@@ -37,7 +36,7 @@ am4core.ready(function() {
 				name: "What happens to the native community?",
 				children: [
 					{ 	key: "Host",
-						name: "We map the persistence of host plants in competition with invasive plants.", value: 2208 }
+						name: "We map the persistence of host plants \n in competition with invasive plants.", value: 2208 }
 						]
 				},
 				{
@@ -45,9 +44,9 @@ am4core.ready(function() {
 				name: "Can we see evolution on human timescales?",
 				children: [
 					{   key: "Rec",
-						name: "We map changes of host plant spatial distributions using herbarium records.", value: 935 },
+						name: "We map changes of host plant spatial \n distributions using herbarium records.", value: 935 },
 					{   key: "Theory",
-						name: "We use theoretical simulations to observe phenotypic and genetic changes on seasonal, annual, and decadal timescales.", value: 1935 }
+						name: "We use theoretical simulations to \n observe phenotypic and genetic changes on \n seasonal, annual, and decadal timescales.", value: 1935 }
 				]
 				}
 
@@ -58,7 +57,7 @@ am4core.ready(function() {
 	networkSeries.dataFields.value = "value";
 	networkSeries.dataFields.key = "key";
 	networkSeries.dataFields.name = "name";
-	networkSeries.dataFields.description = "description";
+	
 	networkSeries.dataFields.children = "children";
 	networkSeries.nodes.template.tooltipText = "{name}";
 	networkSeries.nodes.template.fillOpacity = 1;
