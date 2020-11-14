@@ -1,4 +1,4 @@
-am4core.ready(function() {
+am4core.ready(function () {
 
 	// Themes begin
 	am4core.useTheme(am4themes_moonrisekingdom);
@@ -20,7 +20,7 @@ am4core.ready(function() {
 					{   key: "Mill",
 						name: "Flight mill is used to explore the speed, \n distance, and periodicity of individual bugs.", value: 860 },
 					{   key: "Theory",
-						name: "Theoretical simulations are programmed to explore \n dispersal potential based on genetic and spatial metrics.", value: 2000 }
+						name: "Theoretical simulations are programmed to \n explore dispersal potential based on genetic \n and spatial metrics.", value: 2000 }
 						]
 				},
 				{
@@ -28,7 +28,7 @@ am4core.ready(function() {
 				name: "How do they choose mates?",
 				children: [
 					{	key: "Trials", 
-						name: "Mate trials are used to explore mating behavior.", value: 1408 }
+						name: "Mate trials are used to \n explore mating behavior.", value: 1408 }
 						]
 				},
 				{
