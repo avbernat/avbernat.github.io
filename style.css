@@ -34,7 +34,7 @@ p {  /* Make sure this makes sense */
 	font-size: var(--small-fontsize);
 } 
 
-a { /* links are generally maroon colored */
+a { /* in-text links */
 	color: var(--university-col);
 } 
 
@@ -71,6 +71,7 @@ a:hover {
 }
 
 /* Home Page */
+/* Join Us & Contact Us Page */
 
 .title-centered { /* slide show text */ 
 	font-size: 30px;
@@ -82,7 +83,7 @@ a:hover {
     font-size: 27px;
 } 
 
-.home_text, .join_text {
+.main_text {
 	margin: 2px 145px;
     font-family: var(--mainfont);
     line-height: 25.4px;
@@ -99,17 +100,17 @@ p span.special{
     color: var(--university-col);
 }
 
+.center { /* centers the sponsors */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .sponsors img{
     height: 100%;
     width: 30%;
     object-fit: cover;
     padding: 0px 35px;
-}
-
-.center { /* centers the sponsors */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -118,9 +119,11 @@ p span.special{
 .research_p {
 	font-family: var(--mainfont);
 	font-size: var(--main-fontsize);
-	letter-spacing: 0.04em;
-	color: darkslategray;
-	margin: 2px 145px;
+	letter-spacing: var(--lspacing);
+	color: dimgrey;
+	text-align: center;
+	margin: 2px 65px;
+	line-height: 25.4px;
 }
 
 #chartdiv { /* force-directed diagram */
@@ -311,8 +314,9 @@ p span.special{
 
 .summary {
     font-family: var(--subfont);
-    font-size: var(--small-fontsize);
+    font-size: 14.5px;
 	margin: 2px 145px;
+	line-height: 18px;
 }
 
 .summary2 {
@@ -433,10 +437,6 @@ hr {width: 95%;
 
 /* Join Us Page */
 
-.join_text {
-    padding: 0px 30px;
-}
-
 .code_link {
 	color: black;
 } 
@@ -467,7 +467,7 @@ hr {width: 95%;
 	.title-centered {
 		font-size: 24px;
 	}
-	.home_text, .join_text {
+	.main_text {
 		margin: 2px 85px;
 	}
 	.sponsors img{
@@ -543,7 +543,7 @@ hr {width: 95%;
 		margin: 0px 0px 0px 45px;
 		width: 80%;
 	}
-	.join_text, .home_text {
+	.main_text {
 		padding: 0px 0px;
 	}
 	.research_text, .research_texth, .research_textr,  .research_textl {
@@ -555,7 +555,7 @@ hr {width: 95%;
 	.research_textr {
 		margin: 0px 0px 0px 0px;
 	}
-	.home_text, .join_text {
+	.main_text {
 		margin: 2px 45px;
 	}
 
