@@ -83,20 +83,20 @@ a:hover {
     font-size: 27px;
 } 
 
-.main_text {
+.main_text, .research_p {
 	margin: 2px 145px;
     font-family: var(--mainfont);
-    line-height: 25.4px;
     font-size: var(--main-fontsize);
     letter-spacing: var(--lspacing);
+	line-height: 25.4px;
     color: black;
     text-align: center;
 }
 
 p span.special{
+	font-family: var(--subfont);
+	font-size: 23px;
     font-weight: bold;
-    font-family: var(--subfont); 
-    font-size: 23px;
     color: var(--university-col);
 }
 
@@ -117,13 +117,8 @@ p span.special{
 /* Research Page */
 
 .research_p {
-	font-family: var(--mainfont);
-	font-size: var(--main-fontsize);
-	letter-spacing: var(--lspacing);
 	color: dimgrey;
-	text-align: center;
 	margin: 2px 65px;
-	line-height: 25.4px;
 }
 
 #chartdiv { /* force-directed diagram */
@@ -135,9 +130,8 @@ p span.special{
 }
 
 .rbutton, .b_active {
-    font-family: "Saira+Extra+Condensed", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+	font-family: var(--subfont);
+    font-size: var(--sub-fontsize);
     color: #edf0f1;
     border: none;
     padding: 9px 25px;
@@ -325,7 +319,7 @@ p span.special{
 }
 
 .title {
-    font-family: var(--subfont);
+    font-family: var(--subfont2);
     font-size: 25px;
 	line-height: 40px;
     color: var(--university-col);
@@ -507,7 +501,7 @@ hr {width: 95%;
 
 @media screen and (max-width: 640px) {
 	.rbutton, .b_active {
-		font-size: 15px;
+		font-size: 13px;
 		padding: 9px 15px;
 	}
 	.pbutton {
@@ -563,7 +557,7 @@ hr {width: 95%;
 
 @media screen and (max-width: 490px) {
 	.rbutton, .b_active {
-		font-size: 13px;
+		font-size: 12px;
 		padding: 9px 5px;
 	}
 	.email, .description, .name {
