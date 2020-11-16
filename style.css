@@ -219,13 +219,8 @@ p span.special{
 	padding: 0px 20px;
 }
 
-.cup {
-	margin: 0px 0px 0px 90px;
-}
-
-.cup2 {
+.bag {
 	width: 90%;
-	font-family: var(--subfont3);
 }
 
 .img-with-text img {
@@ -494,9 +489,6 @@ hr {width: 95%;
 	.publications{
     	margin: 15px 20px 0px 160px; 
 	}
-	.cup {
-		margin: 2px 15px 0px 80px;
-	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
 		width: 88%;
@@ -510,9 +502,6 @@ hr {width: 95%;
 	.people_column {
 		width: 50%;
     	padding: 20px;
-	}
-	.cup {
-		margin: 0px 0px 0px 60px;
 	}
 	.tfigure_text{
 		margin: 0px 5px 0px 60px;
@@ -545,9 +534,6 @@ hr {width: 95%;
 	.columns {
 		width: 100%;
 	} 
-	.cup {
-		margin: 2px 15px 0px 30px;
-	}
 	.wfigure_text{
 		margin: 0px 0px 0px 10px;
 	}
