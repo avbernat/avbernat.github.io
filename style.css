@@ -197,22 +197,11 @@ p span.special{
     margin: 0px 0px 0px 10px;
 }
 
-/* t = thin | = w = wide */
-/* tfigure_text is host, morphology, plasticity */
-/* wfigure_text is dispersal, evo time, morphology */
-
-.wfigure_text, .tfigure_text {
+.tfigure_text, .wfigure_text {
     font-family: var(--subfont3);
     color: grey;
     font-size: 13px;
-}
-
-.tfigure_text{
-		margin: 0px 20px 0px 20px;
-}
-
-.tfigure_text{
-	margin: 0px 15px 0px 100px;
+	margin: 0px 20px 0px 20px;
 }
 
 .map {
@@ -226,7 +215,6 @@ p span.special{
 .img-with-text img {
     display: block;
     margin: 0 auto;
-	
 }
 
 /* People Page */
