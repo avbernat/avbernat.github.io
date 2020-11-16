@@ -208,7 +208,7 @@ p span.special{
 	padding: 0px 20px;
 }
 
-.bag {
+.figure_img {
 	width: 90%;
 }
 
@@ -308,7 +308,7 @@ p span.special{
 
 .summary {
     font-family: var(--subfont);
-    font-size: 14.5px;
+    font-size: 14.3px;
 	margin: 2px 145px;
 	line-height: 18px;
 }
@@ -350,8 +350,6 @@ p span.special{
 
 .publications{
     font-family: var(--subfont);
-    font-size: var(--small-fontsize);
-	letter-spacing: var(--lspacing);
     margin: 15px 160px; 
 }
 .timeline {
@@ -364,29 +362,19 @@ p span.special{
 /* Archives Page */
 
 .date {
-	font-family: var(--subfont3);
+	font-family: var(--subfont2);
     margin: 4px 35px;
-	letter-spacing: 0.7px;
+	letter-spacing: 0.7px; 
     font-size: var(--sub-fontsize);
 }
 
-hr {width: 95%;
+hr {width: 95%; /* element displayed as a horizontal rule */
 	margin-left: auto; 
 	margin-right: auto;
 	background-color: gainsboro;
 	height: 1px;
 	border: none;
 }
-
-/* .archive_text {
-	color: #000;
-	font-family: 'proxima-nova', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 300;
-	line-height: 1.2;
-	letter-spacing: 1px;
-	margin: 4px 20px; 
-} */
 
 .archive_text {
     font-family:  Tahoma, Verdana, Segoe, sans-serif;
@@ -395,7 +383,6 @@ hr {width: 95%;
 	color: black;
 	margin: 4px 20px; 
 } 
-
 
 .columns {
     float: left;
@@ -415,21 +402,17 @@ hr {width: 95%;
     width: 120px;
     height: 100%;
     margin: 10px 0px 10px 30px; 
-    padding: 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .code-content {
-    margin-left: 0px
+    margin-left: 105px;
 }
 
 .repo{
     font-family: var(--subfont);
-    font-size: var(--sub-fontsize);
-	letter-spacing: var(--lspacing);
 	color: grey;
 }
-
-/* Join Us Page */
 
 .code_link {
 	color: black;
@@ -438,7 +421,6 @@ hr {width: 95%;
 .code_link:hover {
 	color: maroon;
 }
-
 
 /* Window Adjustments */
 
@@ -538,7 +520,6 @@ hr {width: 95%;
 	.research_textl2, .research_textr,  .research_textl {
 		font-size: var(--small-fontsize);
 	}
-
 	.research_textr {
 		margin: 0px 5px 0px 0px;
 	}
@@ -594,13 +575,3 @@ hr {width: 95%;
 	padding: 9px 15px;
 	margin: 0px 0px 0px 0px;
 }
-
-
-.store {
-	font-family: 'proxima-nova', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 300;
-	line-height: 1.2;
-	letter-spacing: 1px;
-}
-
