@@ -147,12 +147,12 @@ p span.special{
     background-color: #333;
 } 
 
-.wrapper, .button_wrapper, .wrap_img {
+.wrapper {
     display: flex;
     justify-content:center; 
 }
 
-.button_wrapper a{
+.wrapper a{
 	z-index: 3;
 }
 
@@ -175,46 +175,54 @@ p span.special{
 	padding: 30px;
 } 
 
-.research_text, .research_texth, .research_textr,.research_textl {
-    font-family: var(--subfont3);
-	letter-spacing: var(--lspacing);
+/* l,l2 = left side | r = right side */
+/* research_textl2 is host, morphology, plasticity */
+/* research_textl and research_textr is dispersal */
+/* research_textr is evo time */
+
+.research_textl2, .research_textr, .research_textl {
     font-size: var(--sub-fontsize);
 	color: dimgrey;
-	margin: 2px 20px; /*2px 15px 0px 40px;*/
 }
 
-.research_texth {
-    margin: 2px -35px 0px 20px;
+.research_textl2 {
+    margin: 0px -35px 0px 20px;
 }
 
 .research_textr {
-    margin: 2px 0px 0px -25px;
+    margin: 0px 0px 0px -25px;
 }
 
 .research_textl {
-    margin: 2px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
 }
 
-.figure_text,.nfigure_text, .bfigure_text{
+/* t = thin | = w = wide */
+
+/* tfigure_text is host, morphology, plasticity */
+/* wfigure_text is dispersal, evo time, morphology */
+
+.wfigure_text, .tfigure_text {
     font-family: var(--subfont3);
-	letter-spacing: var(--lspacing);
     color: grey;
     font-size: 13px;
-	margin: 2px 15px 0px 40px;
 }
-.nfigure_text{
-	margin: 2px 15px 0px 100px;
+
+.wfigure_text{
+		margin: 0px 0px 0px 40px;
 }
-.bfigure_text{
-	margin: 0px 0px 0px 15px;
+
+.tfigure_text{
+	margin: 0px 15px 0px 100px;
 }
+
 
 .map {
 	padding: 0px 20px;
 }
 
 .cup {
-	margin: 2px 15px 0px 100px;
+	margin: 0px 0px 0px 90px;
 }
 
 
@@ -478,7 +486,7 @@ hr {width: 95%;
 	.publications{
     	margin: 15px 20px 0px 160px; 
 	}
-	.cup, .nfigure_text{
+	.cup {
 		margin: 2px 15px 0px 80px;
 	}
 	.collapsible {
@@ -496,8 +504,12 @@ hr {width: 95%;
     	padding: 20px;
 	}
 	.cup {
-		margin: 2px 15px 0px 60px;
+		margin: 0px 0px 0px 60px;
 	}
+	.tfigure_text{
+		margin: 0px 5px 0px 60px;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -525,32 +537,32 @@ hr {width: 95%;
 	.columns {
 		width: 100%;
 	} 
-	.figure_text{
-		margin: 0px 0px;
-	}
 	.cup {
 		margin: 2px 15px 0px 30px;
 	}
-	.nfigure_text{
-		margin: 2px 15px 0px 30px;
+	.wfigure_text{
+		margin: 0px 0px 0px 10px;
+	}
+	.tfigure_text{
+		margin: 0px 5px 0px 30px;
+	}
+	.tfigure_text, .wfigure_text {
+    	font-size: 12px;
 	}
 	.collapsible {
 		margin: 0px 0px 0px 45px;
 		width: 80%;
 	}
-	.research_text, .research_texth, .research_textr,  .research_textl {
+	.research_textl2, .research_textr,  .research_textl {
 		font-size: var(--small-fontsize);
 	}
-	.figure_text, .nfigure_text, .bfigure_text{
-    	font-size: 12px;
-	}
+
 	.research_textr {
-		margin: 0px 0px 0px 0px;
+		margin: 0px 5px 0px 0px;
 	}
 	.main_text {
 		margin: 2px 45px;
 	}
-
 }
 
 @media screen and (max-width: 490px) {
