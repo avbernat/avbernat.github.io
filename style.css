@@ -186,7 +186,7 @@ p span.special{
 }
 
 .research_textl2 {
-    margin: 0px -35px 0px 20px;
+    margin: 0px -15px 0px 20px;
 }
 
 .research_textr {
@@ -207,8 +207,8 @@ p span.special{
     font-size: 13px;
 }
 
-.wfigure_text{
-		margin: 0px 0px 0px 40px;
+.tfigure_text{
+		margin: 0px 20px 0px 20px;
 }
 
 .tfigure_text{
@@ -223,6 +223,16 @@ p span.special{
 	margin: 0px 0px 0px 90px;
 }
 
+.cup2 {
+	width: 90%;
+	font-family: var(--subfont3);
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+	
+}
 
 /* People Page */
 
