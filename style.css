@@ -538,9 +538,6 @@ hr {width: 95%;
 		margin: 0px 0px 0px 45px;
 		width: 80%;
 	}
-	.main_text {
-		padding: 0px 0px;
-	}
 	.research_text, .research_texth, .research_textr,  .research_textl {
 		font-size: var(--small-fontsize);
 	}
@@ -580,6 +577,9 @@ hr {width: 95%;
 	.two_columns {
 		padding: 5px;
 	} 
+	.main_text {
+		margin: 2px 25px;
+	}
 }
 
 /* Bottom Rights */
