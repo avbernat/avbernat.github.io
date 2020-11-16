@@ -198,7 +198,6 @@ p span.special{
 }
 
 /* t = thin | = w = wide */
-
 /* tfigure_text is host, morphology, plasticity */
 /* wfigure_text is dispersal, evo time, morphology */
 
@@ -215,7 +214,6 @@ p span.special{
 .tfigure_text{
 	margin: 0px 15px 0px 100px;
 }
-
 
 .map {
 	padding: 0px 20px;
