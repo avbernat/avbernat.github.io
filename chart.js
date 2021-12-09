@@ -10,45 +10,55 @@ am4core.ready(function () {
 
 	chart.data = [
 			{
-			key: "Adaptation",
+			key: "Adaptation & Plasticity",
 			name: "How do organisms adapt to \n human-modified environments?",
 			children: [
 				{
 				key: "Dispersal",
 				name: "Why do insects disperse?",
 				children: [
-					{   key: "Mill",
-						name: "Flight mill is used to explore the speed, \n distance, and periodicity of individual bugs.", value: 860 },
-					{   key: "Theory",
-						name: "Theoretical simulations are programmed to \n explore dispersal potential based on genetic \n and spatial metrics.", value: 2000 }
+					{   key: "Flight",
+						name: "We use a flight mill to explore the speed, \n distance, and repeatability of individual flight behavior.", value: 1360 },
+					{   key: "Sims",
+						name: "We program theoretical simulations to explore \n dispersal evolution based on landscape architecture, \n local adaptation, and diapause.", value: 1360
+                }
 						]
 				},
 				{
-				key: "Mates",
-				name: "How do they choose mates?",
+				key: "Mate \n Choice",
+				name: "How do insects choose mates?",
 				children: [
-					{	key: "Trials", 
-						name: "Mate trials are used to \n explore mating behavior.", value: 1408 }
+					{	key: "Lab \n Trials", 
+						name: "We use mate trials to explore the drivers of \n mate preference and attractiveness.", value: 1935 }
 						]
 				},
-				{
-				key: "Nativity",
-				name: "What happens to the native community?",
-				children: [
-					{ 	key: "Host",
-						name: "We map the persistence of host plants \n in competition with invasive plants.", value: 2208 }
-						]
-				},
-				{
-				key: "Time",
+                {
+				key: "Long-term \n change",
 				name: "Can we see evolution on human timescales?",
 				children: [
-					{   key: "Rec",
-						name: "We map changes of host plant spatial \n distributions using herbarium records.", value: 935 },
-					{   key: "Theory",
-						name: "We use theoretical simulations to \n observe phenotypic and genetic changes on \n seasonal, annual, and decadal timescales.", value: 1935 }
+					{   key: "Maps",
+						name: "We map changes of host plant spatial \n distributions using herbarium records.", value: 1135 },
+					{   key: "Field \n Data",
+						name: "We collect long-term data from the field \n to monitor phenotypic and genetic changes on \n seasonal, annual, and decadal timescales.", value: 1935 }
 				]
-				}
+				},
+				{
+				key: "Field",
+				name: "What happens to other species in the native community?",
+				children: [
+					{ 	key: "Host",
+						name: "We explore how selection on the native host plant has \n changed in response to changes in its seed predators.", value: 1008 }
+						]
+				},
+                {   key: "Morph",
+						name: "What is the relationship between morphology, behavior, and local adaptation?",
+                children: [
+                    {   key: "Beak",
+                        name: "We study how beak length impacts feeding success and fitness and \n the genetic and environmental factors that determine beak length.", value: 1008},
+                    {   key: "Wing",
+                        name: "We study how wing morphology impacts flight ability.", value: 1008}
+                ]}
+
 
 			]
 		}
